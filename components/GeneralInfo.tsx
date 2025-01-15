@@ -62,7 +62,7 @@ function GeneralInfo() {
         </div>
         <div>
           <p>Phone:</p>
-          <p>(708) 790-1398</p>
+          <p>708 790-1398</p>
         </div>
       </motion.div>
     </div>
