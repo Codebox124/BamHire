@@ -7,7 +7,7 @@ import { AwardsSection } from "@/components/awards-section";
 import { TalentSection } from "@/components/talent-section";
 import { PartnerSection } from "@/components/partner-section";
 import { JobSection } from "@/components/job-section";
-import { Footer } from "@/components/footer";
+
 
 export default function Home() {
   return (

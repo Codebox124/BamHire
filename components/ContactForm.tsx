@@ -73,7 +73,7 @@ function ContactForm() {
         }}
         className='w-full md:w-1/2'>
         <h1 className='text-3xl'>Leave us a Message</h1>
-        <p className='text-xl my-[20px]'>The Bam-Hire team is dedicated to helping you achieve your goals through our expertise in consulting, direct placement, staff augmentation, and contract-to-hire services. Reach out today, and let’s create tailored solutions that propel your business forward.</p>
+        <p className='text-xl my-[20px]'>The Bam-Hire team is dedicated to helping you achieve your goals through our expertise in consulting, direct placement, staff augmentation, and contract-to-hire services. Reach out today, and lets create tailored solutions that propel your business forward.</p>
         <form ref={form} onSubmit={(e) => { e.preventDefault(); setShowSuccessMessage(true); sendEmail(e); setTimeout(() => { setShowSuccessMessage(false) }, 3000); setContactForm({ name: "", industry: "", email: "", contact: "", notes: "" }) }} className='flex flex-col items-start w-full'>
           <input value={contactForm.name} onChange={(e) => { setContactForm({ ...contactForm, name: e.target.value }) }} className='outline-none border-b-[#00283c] border-b-[2px] mb-[20px] p-[10px] w-full' type="text" placeholder='Company Name' name='company_name' />
           <input value={contactForm.industry} onChange={(e) => { setContactForm({ ...contactForm, industry: e.target.value }) }} className='outline-none border-b-[#00283c] border-b-[2px] mb-[20px] p-[10px] w-full' type="text" placeholder='Industry' name='industry' />

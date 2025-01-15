@@ -38,7 +38,7 @@ function GeneralInfo() {
           duration: 0.7,
           ease: "easeInOut"
         }}
-        className='text-xl my-[20px]'>Whether you're an employer seeking top talent or a professional looking for your next opportunity, we encourage you to reach out – we’re here to help you succeed!</motion.p>
+        className='text-xl my-[20px]'>Whether you're an employer seeking top talent or a professional looking for your next opportunity, we encourage you to reach out  were here to help you succeed!</motion.p>
       <motion.div
         initial={{
           y: 10,
