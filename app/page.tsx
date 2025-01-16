@@ -47,7 +47,7 @@ export default function Home() {
       {/* Other sections */}
       <NewsSection />
       <AwardsSection />
-      <TalentSection />
+      {/* <TalentSection /> */}
       <PartnerSection />
       <JobSection />
     </main>

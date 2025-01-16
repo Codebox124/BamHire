@@ -5,20 +5,36 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Lightbulb, Users, Globe, BarChart, Shield, Clock } from "lucide-react";
 
 export default function AdvantagePage() {
+  const testimonials = [
+    {
+      id: 1,
+      quote:
+        "Bamhire changed my career trajectory in the best way possible. Their support, guidance, and connections helped me land a role that truly aligns with my skills and passions. I'm finally in a job I love, and it's all thanks to them!",
+      name: "John Smith",
+      role: "Marketing Specialist",
+    },
+    {
+      id: 2,
+      quote:
+        "Bamhire truly opened doors for me. They took the time to understand my goals and connected me with the perfect opportunity. I'm so grateful for their personal touch and constant support throughout the entire process. It made all the difference!",
+      name: "Emily Carter",
+      role: "Project Manager",
+    },
+  ];
+
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-                The Bamhire Advantage
+                The Bamhire Magic
               </h1>
-              <p className="text-xl text-[#a1a484]">
-                Discover why leading companies choose Bamhire for their
-                workforce solutions. Our innovative approach and global reach
-                set us apart.
+              <p className="text-xl ">
+                Learn what makes us experts in matching great opportunities with skilled professionals and companies
               </p>
             </div>
             <div className="relative aspect-video lg:aspect-square">
@@ -96,7 +112,7 @@ export default function AdvantagePage() {
       </section>
 
       {/* Case Studies */}
-      <section className="bg-gray-50 px-4 py-16 md:py-24">
+      {/* <section className="bg-gray-50 px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Success Stories
@@ -133,7 +149,7 @@ export default function AdvantagePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
       <section className="px-4 py-16 md:py-24">
@@ -142,20 +158,17 @@ export default function AdvantagePage() {
             Client Testimonials
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
-            {[1, 2].map((i) => (
-              <Card key={i} className="bg-gray-50">
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.id} className="bg-gray-50">
                 <CardContent className="p-8">
                   <blockquote className="space-y-4">
                     <p className="text-lg text-muted-foreground">
-                      &quot;Bamhire has transformed how we approach talent
-                      acquisition. Their innovative solutions and global reach
-                      have helped us build high-performing teams across multiple
-                      regions.&quot;
+                      &quot;{testimonial.quote}&quot;
                     </p>
                     <footer>
-                      <div className="font-semibold">Client Name</div>
+                      <div className="font-semibold">{testimonial.name}</div>
                       <div className="text-sm text-muted-foreground">
-                        Position, Company
+                        {testimonial.role}
                       </div>
                     </footer>
                   </blockquote>
@@ -170,7 +183,7 @@ export default function AdvantagePage() {
       <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-            Ready to Experience the Bamhire Advantage?
+            Ready to Experience the Bamhire Magic?
           </h2>
           <p className="mb-8 text-lg text-[#a1a484]">
             Let&apos;s discuss how our solutions can help you achieve your

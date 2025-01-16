@@ -62,7 +62,7 @@ export function MobileMenu() {
                       className="block py-2"
                       onClick={() => setOpen(false)}
                     >
-                      The Bamhire Advantage
+                      The Bamhire Magic
                     </Link>
                   </li>
                 </ul>

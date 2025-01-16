@@ -43,7 +43,7 @@ export function Header() {
                   <ListItem href="/about" title="About Us">
                     Learn about our history and values
                   </ListItem>
-                  <ListItem href="/advantage" title="The Bamhire Advantage">
+                  <ListItem href="/advantage" title="The Bamhire Magic">
                     Discover our unique solutions
                   </ListItem>
                 </ul>

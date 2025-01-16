@@ -10,7 +10,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
                 Pioneering the Future of Work
@@ -36,7 +36,20 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <section className="px-4 py-16 md:py-24">
+
         <div className="mx-auto max-w-7xl">
+          <div className="text-center my-4 text-xl ">
+            <h1>
+              At BAM Hire, we pride ourselves on delivering a superior level of service, drawing on extensive sales and recruiting expertise combined with real-world delivery experience.
+              This powerful blend enables us to vet candidates more thoroughly than industry competitors, ensuring we address our clients' most pressing challenges with top talent.
+
+            </h1>
+            <span>
+              We’re dedicated to helping people achieve success every day, providing our clients with trusted solutions and our consultants with fulfilling career paths.
+              Founded on the simple idea of serving friends, our tight-knit team operates with integrity, collaboration, and a passion for producing exceptional results that genuinely impact lives and careers.
+
+            </span>
+          </div>
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Our Core Values
           </h2>
@@ -130,7 +143,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="px-4 py-16 md:py-24">
+      {/* <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Our Leadership Team
@@ -164,7 +177,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
