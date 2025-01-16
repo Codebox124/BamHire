@@ -220,7 +220,7 @@ export default function JobsPage() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg md:aspect-auto">
               <Image
-                src="/business2.jpg"
+                src="/Job_img.jpg"
                 alt="Happy professionals working together"
                 fill
                 className="object-cover"

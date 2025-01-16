@@ -7,17 +7,18 @@ export function NewsSection() {
   const news = [
     {
       category: "PRESS RELEASE",
-      title: "Bamhire announces strategic leadership expansion",
+      title: "BAM hire Strengthens Global Reach with New Strategic Partnerships",
       link: "#",
     },
     {
-      category: "INSIGHTS",
-      title: "Future of Work Report: Three pillars of workforce resilience",
+      category: "INSIGHT",
+      title: "The Future of Talent Acquisition: How AI and Automation Are Reshaping Recruitment",
       link: "#",
     },
+
     {
       category: "IN THE NEWS",
-      title: "Workforce Innovation: Which AI tools work for job recruiters?",
+      title: "BAM hire Expands Global Footprint with Strategic Talent Partnerships",
       link: "#",
     },
   ];
