@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin  } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,30 +13,20 @@ export function Footer() {
               Bamhire
             </Link>
             <p className="mt-4 max-w-md text-gray-400">
-              We create limitless opportunities by connecting people to work in
-              ways that enrich their lives, and companies to people who drive
-              innovation and growth.
+              We unlock endless possibilities by connecting individuals to meaningful work that enhances their lives and bringing people together to drive innovation and growth.
             </p>
           </div>
 
           <div>
             <h3 className="mb-4 font-semibold uppercase">About Bamhire</h3>
             <ul className="space-y-3 text-gray-400">
-              <li>
-                <Link href="#" className="hover:text-white">
-                  75 Years of Innovation
-                </Link>
-              </li>
+
               <li>
                 <Link href="#" className="hover:text-white">
                   Bamhire Talent Promise
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="hover:text-white">
-                  Investor Relations
-                </Link>
-              </li>
+
               <li>
                 <Link href="#" className="hover:text-white">
                   Careers at Bamhire
@@ -67,17 +57,16 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
             <div className="flex flex-wrap justify-center gap-4 md:justify-start">
               <Link href="#" className="hover:text-white">
-                Cookie Declaration
+                Privacy Policy
+              </Link>
+
+              <Link href="#" className="hover:text-white">
+                Tearms Of Services
               </Link>
               <Link href="#" className="hover:text-white">
-                Sitemap
+                Cookie Policy
               </Link>
-              <Link href="#" className="hover:text-white">
-                Code of Conduct
-              </Link>
-              <Link href="#" className="hover:text-white">
-                Privacy Statement
-              </Link>
+
             </div>
             <div className="flex gap-4">
 

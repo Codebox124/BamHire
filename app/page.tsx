@@ -19,9 +19,7 @@ export default function Home() {
               Your Talent. Our Focus
             </h1>
             <p className="mb-8 text-lg text-gray-200">
-              Partner with the workforce leader breaking down barriers and
-              helping professionals worldwide connect with transformative career
-              opportunities.
+            Team up with the organization redefining careers by eliminating barriers and connecting individuals to opportunities that transform lives.
             </p>
             <Button
               asChild
