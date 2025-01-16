@@ -4,10 +4,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { NewsSection } from "@/components/news-section";
 import { AwardsSection } from "@/components/awards-section";
-import { TalentSection } from "@/components/talent-section";
 import { PartnerSection } from "@/components/partner-section";
 import { JobSection } from "@/components/job-section";
-
 
 export default function Home() {
   return (
@@ -19,7 +17,9 @@ export default function Home() {
               Your Talent. Our Focus
             </h1>
             <p className="mb-8 text-lg text-gray-200">
-            Team up with the organization redefining careers by eliminating barriers and connecting individuals to opportunities that transform lives.
+              Team up with the organization redefining careers by eliminating
+              barriers and connecting individuals to opportunities that
+              transform lives.
             </p>
             <Button
               asChild

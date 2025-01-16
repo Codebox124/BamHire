@@ -8,14 +8,14 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
+      <section className="bg-earth-to-sky px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="grid gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
                 Pioneering the Future of Work
               </h1>
-              <p className="text-xl text-white">
+              <p className="text-xl text-white/90">
                 For over two decades, Bamhire has been at the forefront of
                 workforce innovation, connecting talented individuals with
                 opportunities that matter.
@@ -23,7 +23,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-video lg:aspect-square">
               <Image
-                src="/business3.jpg"
+                src="/business1.jpg"
                 alt="Office environment"
                 fill
                 className="rounded-lg object-cover"
@@ -36,21 +36,8 @@ export default function AboutPage() {
 
       {/* Values Section */}
       <section className="px-4 py-16 md:py-24">
-
         <div className="mx-auto max-w-7xl">
-          <div className="text-center my-4 text-xl ">
-            <h1>
-              At BAM Hire, we pride ourselves on delivering a superior level of service, drawing on extensive sales and recruiting expertise combined with real-world delivery experience.
-              This powerful blend enables us to vet candidates more thoroughly than industry competitors, ensuring we address our clients' most pressing challenges with top talent.
-
-            </h1>
-            <span>
-              We’re dedicated to helping people achieve success every day, providing our clients with trusted solutions and our consultants with fulfilling career paths.
-              Founded on the simple idea of serving friends, our tight-knit team operates with integrity, collaboration, and a passion for producing exceptional results that genuinely impact lives and careers.
-
-            </span>
-          </div>
-          <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-[#a25f35] md:text-4xl">
             Our Core Values
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -82,8 +69,10 @@ export default function AboutPage() {
             ].map((value) => (
               <Card key={value.title} className="border-none bg-gray-50">
                 <CardContent className="pt-6">
-                  <value.icon className="mb-4 h-8 w-8 text-[#a1a484]" />
-                  <h3 className="mb-2 text-xl font-semibold">{value.title}</h3>
+                  <value.icon className="mb-4 h-8 w-8 text-[#a25f35]" />
+                  <h3 className="mb-2 text-xl font-semibold text-[#a25f35]">
+                    {value.title}
+                  </h3>
                   <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
               </Card>
@@ -93,11 +82,13 @@ export default function AboutPage() {
       </section>
 
       {/* History Section */}
-      <section className="bg-gray-50 px-4 py-16 md:py-24">
+      <section className="bg-[#f5f5f5] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold md:text-4xl">Our History</h2>
+              <h2 className="text-3xl font-bold text-[#a25f35] md:text-4xl">
+                Our History
+              </h2>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
                   Founded in 2000, Bamhire has grown from a local staffing
@@ -113,7 +104,7 @@ export default function AboutPage() {
               </div>
               <Button
                 asChild
-                className="bg-[#a1a484] text-white hover:bg-[#a1a484] hover:text-white"
+                className="bg-[#a25f35] text-white hover:bg-[#9e7a52]"
               >
                 <Link href="/contact">Connect With Us</Link>
               </Button>
@@ -121,19 +112,19 @@ export default function AboutPage() {
             <div className="grid gap-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a1a484]">20+</h3>
+                  <h3 className="text-4xl font-bold text-[#a25f35]">20+</h3>
                   <p className="text-muted-foreground">Years of Excellence</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a1a484]">50+</h3>
+                  <h3 className="text-4xl font-bold text-[#a25f35]">50+</h3>
                   <p className="text-muted-foreground">Countries Worldwide</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a1a484]">1M+</h3>
+                  <h3 className="text-4xl font-bold text-[#a25f35]">1M+</h3>
                   <p className="text-muted-foreground">Lives Impacted</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a1a484]">10K+</h3>
+                  <h3 className="text-4xl font-bold text-[#a25f35]">10K+</h3>
                   <p className="text-muted-foreground">Client Companies</p>
                 </div>
               </div>
@@ -143,49 +134,48 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Section */}
-      {/* <section className="px-4 py-16 md:py-24">
+      <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-[#a25f35] md:text-4xl">
             Our Leadership Team
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[1, 2, 3, 4].map((i) => (
               <Card key={i}>
                 <CardContent className="pt-6">
                   <div className="mb-4 aspect-[3/4] w-full overflow-hidden rounded-lg">
                     <Image
-                      src="/business1.jpg"
+                      src={`/business${i}.jpg`}
                       alt="Team member"
                       width={300}
                       height={400}
                       className="h-full w-full object-cover"
                     />
                   </div>
-                  <h3 className="mb-1 text-lg font-semibold">
+                  <h3 className="mb-1 text-lg font-semibold text-[#a25f35]">
                     Executive Name {i}
                   </h3>
                   <p className="mb-2 text-sm text-muted-foreground">
                     Executive Position
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                    a excepturi ipsa laudantium ea expedita quod soluta iusto
-                    sunt odio.
+                    Brief description of the executive&apos;s role and
+                    experience at Bamhire.
                   </p>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
-      <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
+      <section className="bg-earth-to-sky px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Join Our Growing Team
           </h2>
-          <p className="mb-8 text-lg text-white">
+          <p className="mb-8 text-lg text-white/90">
             Be part of a company that&apos;s shaping the future of work. Explore
             career opportunities at Bamhire.
           </p>
@@ -193,9 +183,9 @@ export default function AboutPage() {
             asChild
             variant="outline"
             size="lg"
-            className="bg-transparent text-white hover:bg-white hover:text-[#a1a484]"
+            className="bg-transparent text-white hover:bg-white hover:text-[#a25f35]"
           >
-            <Link href="/jobs">View Open Positions</Link>
+            <Link href="/careers">View Open Positions</Link>
           </Button>
         </div>
       </section>

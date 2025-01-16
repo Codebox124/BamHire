@@ -1,7 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
 import {
   Card,
   CardContent,
@@ -22,46 +24,96 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { JobApplicationModal } from "@/components/job-application-modal";
+import { jobs } from "@/lib/data";
 
 export default function JobsPage() {
-  const featuredJobs = [
-    {
-      title: "Senior Software Engineer",
-      location: "San Francisco, CA",
-      type: "Full-time",
-      category: "Technology",
-    },
-    {
-      title: "Marketing Manager",
-      location: "New York, NY",
-      type: "Full-time",
-      category: "Marketing",
-    },
-    {
-      title: "Data Analyst",
-      location: "Chicago, IL",
-      type: "Contract",
-      category: "Analytics",
-    },
-    {
-      title: "UX Designer",
-      location: "Remote",
-      type: "Full-time",
-      category: "Design",
-    },
-    {
-      title: "Sales Representative",
-      location: "Los Angeles, CA",
-      type: "Full-time",
-      category: "Sales",
-    },
-    {
-      title: "Customer Support Specialist",
-      location: "Austin, TX",
-      type: "Part-time",
-      category: "Customer Service",
-    },
-  ];
+  const [selectedJob, setSelectedJob] = useState<string | null>(null);
+
+  const featuredJobs = jobs.filter((job) => job.featured);
+  const regularJobs = jobs.filter((job) => !job.featured);
+
+  const handleApply = (jobTitle: string) => {
+    setSelectedJob(jobTitle);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedJob(null);
+  };
+
+  const renderJobCard = (job: (typeof jobs)[0]) => (
+    <Card key={job.id} className="flex flex-col">
+      <CardHeader>
+        <div className="flex items-center justify-between">
+          <CardTitle className="text-[#a25f35]">{job.title}</CardTitle>
+          {job.featured && (
+            <Badge className="bg-[#82b8e2] text-white">Featured</Badge>
+          )}
+        </div>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <MapPin className="h-4 w-4" />
+          {job.location}
+        </div>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <div className="mb-4 flex flex-wrap gap-2">
+          <Badge variant="secondary" className="bg-[#a1a484] text-white">
+            {job.type}
+          </Badge>
+          <Badge variant="outline">{job.category}</Badge>
+        </div>
+        <p className="mb-4 text-muted-foreground">
+          {job.description.slice(0, 200)}...
+        </p>
+        <div className="space-y-4">
+          <div>
+            <h4 className="font-semibold">Key Responsibilities:</h4>
+            <ul className="ml-4 list-disc text-sm text-muted-foreground">
+              {job.responsibilities.slice(0, 3).map((resp, index) => (
+                <li key={index}>{resp}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold">Required Qualifications:</h4>
+            <ul className="ml-4 list-disc text-sm text-muted-foreground">
+              {job.qualifications.slice(0, 3).map((qual, index) => (
+                <li key={index}>{qual}</li>
+              ))}
+            </ul>
+          </div>
+          {job.compensation && (
+            <div>
+              <h4 className="font-semibold">Compensation:</h4>
+              <div className="text-sm text-muted-foreground">
+                {job.compensation.salary && (
+                  <p>Salary: {job.compensation.salary}</p>
+                )}
+                {job.compensation.dailyMinimum && (
+                  <p>Daily Minimum: {job.compensation.dailyMinimum}</p>
+                )}
+                {job.compensation.relocationBonus && (
+                  <p>Relocation Bonus: {job.compensation.relocationBonus}</p>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      </CardContent>
+      <CardFooter className="flex gap-4">
+        <Button
+          variant="outline"
+          className="flex-1 border-[#a25f35] text-[#a25f35] hover:bg-[#a25f35] hover:text-white"
+          onClick={() => handleApply(job.title)}
+        >
+          Apply Now
+        </Button>
+        <Button variant="outline" className="flex-1">
+          Learn More
+        </Button>
+      </CardFooter>
+    </Card>
+  );
 
   return (
     <main className="min-h-screen">
@@ -118,75 +170,60 @@ export default function JobsPage() {
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Featured Job Openings
           </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredJobs.map((job, index) => (
-              <Card key={index} className="flex flex-col justify-between">
-                <CardHeader>
-                  <CardTitle>{job.title}</CardTitle>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <MapPin className="h-4 w-4" />
-                    {job.location}
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge
-                      variant="secondary"
-                      className="bg-[#a1a484] text-white"
-                    >
-                      {job.type}
-                    </Badge>
-                    <Badge variant="outline">{job.category}</Badge>
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="outline" className="w-full">
-                    View Job
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
+          <div className="grid gap-6 md:grid-cols-2">
+            {featuredJobs.map(renderJobCard)}
           </div>
-          <div className="mt-12 text-center">
-            <Button asChild size="lg">
-              <Link href="/all-jobs">
-                View All Jobs
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+        </div>
+      </section>
+
+      {/* All Jobs Section */}
+      <section className="bg-gray-50 px-4 py-16 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+            All Available Positions
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {regularJobs.map(renderJobCard)}
           </div>
         </div>
       </section>
 
       {/* Job Categories Section */}
-      <section className="bg-gray-50 px-4 py-16 md:py-24">
+      <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Explore Job Categories
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {["Technology", "Healthcare", "Finance", "Administration"].map(
-              (category, index) => (
-                <Card
-                  key={index}
-                  className="text-center hover:bg-[#82b8c2] hover:shadow-md transition-all duration-300"
-                >
-                  <CardContent className="pt-6">
-                    <Briefcase className="mx-auto mb-4 h-12 w-12 text-[#63a1c4]" />
-                    <h3 className="text-lg font-semibold">{category}</h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      Explore jobs in {category}
-                    </p>
-                  </CardContent>
-                </Card>
-              )
-            )}
+            {[
+              "Technology",
+              "Healthcare",
+              "Finance",
+              "Marketing",
+              "Sales",
+              "Customer Service",
+              "Human Resources",
+              "Administration",
+            ].map((category, index) => (
+              <Card
+                key={index}
+                className="text-center hover:bg-[#82b8e2]/10 hover:shadow-md transition-all duration-300"
+              >
+                <CardContent className="pt-6">
+                  <Briefcase className="mx-auto mb-4 h-12 w-12 text-[#82b8e2]" />
+                  <h3 className="text-lg font-semibold">{category}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    Explore jobs in {category}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Why Work With Us Section */}
-      <section className="px-4 py-16 md:py-24">
+      <section className="bg-gray-50 px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 md:grid-cols-2">
             <div className="space-y-6">
@@ -207,20 +244,24 @@ export default function JobsPage() {
                   "Global network of top employers",
                 ].map((point, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <div className="rounded-full bg-green-100 p-1">
-                      <Check className="h-5 w-5 text-green-600" />
+                    <div className="rounded-full bg-[#82b8e2]/20 p-1">
+                      <Check className="h-5 w-5 text-[#82b8e2]" />
                     </div>
                     {point}
                   </li>
                 ))}
               </ul>
-              <Button asChild size="lg" className="mt-6">
+              <Button
+                asChild
+                size="lg"
+                className="mt-6 bg-[#a25f35] text-white hover:bg-[#9e7a52]"
+              >
                 <Link href="/about">Learn More About Bamhire</Link>
               </Button>
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg md:aspect-auto">
               <Image
-                src="/Job_img.jpg"
+                src="/placeholder.svg"
                 alt="Happy professionals working together"
                 fill
                 className="object-cover"
@@ -259,7 +300,7 @@ export default function JobsPage() {
             ].map((resource, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <resource.icon className="mb-4 h-12 w-12 text-[#63a1c4]" />
+                  <resource.icon className="mb-4 h-12 w-12 text-[#a25f35]" />
                   <CardTitle>{resource.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -268,7 +309,7 @@ export default function JobsPage() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="link" className="px-0 text-[#63a1c4]">
+                  <Button variant="link" className="px-0 text-[#a25f35]">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -295,20 +336,25 @@ export default function JobsPage() {
               asChild
               size="lg"
               variant="outline"
-              className="bg-white text-[#a25f35] hover:bg-green-50"
+              className="bg-white text-[#a25f35] hover:bg-[#a1a484]/10"
             >
               <Link href="/register">Create an Account</Link>
             </Button>
             <Button
               asChild
               size="lg"
-              className="bg-[#a1a484] hover:bg-[#ae7a52]"
+              className="bg-[#a1a484] hover:bg-[#9e7a52]"
             >
               <Link href="/all-jobs">Browse All Jobs</Link>
             </Button>
           </div>
         </div>
       </section>
+      <JobApplicationModal
+        isOpen={!!selectedJob}
+        onClose={handleCloseModal}
+        jobTitle={selectedJob || ""}
+      />
     </main>
   );
 }
