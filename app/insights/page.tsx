@@ -26,9 +26,9 @@ export default function InsightsPage() {
         <div className="mx-auto max-w-7xl">
           <Tabs defaultValue="insights" className="space-y-8">
             <TabsList className="w-full justify-start">
-              <TabsTrigger value="insights">Insights</TabsTrigger>
               <TabsTrigger value="press">Press Releases</TabsTrigger>
               <TabsTrigger value="news">News</TabsTrigger>
+              <TabsTrigger value="insights">Insights</TabsTrigger>
             </TabsList>
 
             <TabsContent value="insights">

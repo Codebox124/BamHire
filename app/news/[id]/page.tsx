@@ -9,6 +9,10 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+interface NewsArticlePageProps {
+  params: { id: string };
+}
+
 export default async function NewsArticlePage({
   params,
 }: {
@@ -25,7 +29,7 @@ export default async function NewsArticlePage({
     <div className="min-h-screen bg-gray-50">
       <main className="container mx-auto px-4 py-8 md:py-16">
         <Link
-          href="/news"
+          href="/"
           className="inline-flex items-center text-[#a25f35] hover:text-[#9e7a52] mb-8"
         >
           <ChevronLeft className="mr-2 h-4 w-4" />
@@ -36,8 +40,8 @@ export default async function NewsArticlePage({
             <Image
               src={newsToDisplay.image || "/placeholder.svg"}
               alt={newsToDisplay.title}
-              layout="fill"
-              objectFit="cover"
+              fill
+              className="object-cover"
               priority
             />
           </div>
@@ -80,9 +84,8 @@ export default async function NewsArticlePage({
                       <Image
                         src={item.image || "/placeholder.svg"}
                         alt={item.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-md"
+                        fill
+                        className="object-cover rounded-md"
                       />
                     </div>
                     <Badge

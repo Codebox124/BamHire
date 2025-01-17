@@ -17,9 +17,8 @@ export default function Home() {
               Your Talent. Our Focus
             </h1>
             <p className="mb-8 text-lg text-gray-200">
-              Team up with the organization redefining careers by eliminating
-              barriers and connecting individuals to opportunities that
-              transform lives.
+              Team up with the organization redefining careers by eliminating barriers
+              and connecting individuals to opportunities that transform lives.
             </p>
             <Button
               asChild
@@ -35,14 +34,15 @@ export default function Home() {
         </div>
         <div className="relative aspect-square md:aspect-auto">
           <Image
-            src="/business2.jpg"
+            src="/business3.jpg"
             alt="Professional at work"
             fill
-            className="object-cover"
+            className="object-cover bg-[#f4f4f4]" 
             priority
           />
         </div>
       </section>
+
 
       {/* Other sections */}
       <NewsSection />
