@@ -9,12 +9,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+interface NewsArticlePageProps {
+  params: { id: string };
+}
+
 export default async function NewsArticlePage({
   params,
-}: {
-  params: { id: string };
-}) {
-  const newsId = params.id;
+}: NewsArticlePageProps) {
+  const { id: newsId } = params;
   const newsToDisplay = newsItems.find((item) => item.id === newsId);
 
   if (!newsToDisplay) {
@@ -36,8 +38,8 @@ export default async function NewsArticlePage({
             <Image
               src={newsToDisplay.image || "/placeholder.svg"}
               alt={newsToDisplay.title}
-              layout="fill"
-              objectFit="cover"
+              fill
+              className="object-cover"
               priority
             />
           </div>
@@ -80,9 +82,8 @@ export default async function NewsArticlePage({
                       <Image
                         src={item.image || "/placeholder.svg"}
                         alt={item.title}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-md"
+                        fill
+                        className="object-cover rounded-md"
                       />
                     </div>
                     <Badge
