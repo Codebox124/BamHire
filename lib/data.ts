@@ -24,6 +24,7 @@ export interface NewsItem {
     content: string;
     date: string;
     excerpt: string;
+    image: string;
 }
 
 export const jobs: Job[] = [
@@ -194,7 +195,8 @@ export const newsItems: NewsItem[] = [
   
   With a growing global footprint, BAM hire is positioning itself to better serve clients and candidates, ensuring companies have access to the skilled workforce they need to drive innovation and growth. In addition, job seekers will benefit from increased access to diverse roles in new regions, furthering their career aspirations.
   
-  As part of its commitment to fostering collaboration and inclusivity in the workforce, BAM hire will continue to innovate and refine its services, ensuring they meet the demands of an ever-evolving job market. Through these new partnerships, BAM hire is poised to enhance its reputation as a forward-thinking leader in workforce solutions, committed to creating meaningful connections and empowering both businesses and individuals to succeed on a global scale.`
+  As part of its commitment to fostering collaboration and inclusivity in the workforce, BAM hire will continue to innovate and refine its services, ensuring they meet the demands of an ever-evolving job market. Through these new partnerships, BAM hire is poised to enhance its reputation as a forward-thinking leader in workforce solutions, committed to creating meaningful connections and empowering both businesses and individuals to succeed on a global scale.`,
+        image: "/business1.jpg"
     },
     {
         id: "digital-talent-acquisition",
@@ -206,7 +208,8 @@ export const newsItems: NewsItem[] = [
   
   By staying ahead of trends and adapting to changes, BAM hire provides expert guidance on how organizations can thrive in the evolving world of work.
   
-  Stay tuned to BAM hire's insights section for ongoing analysis of industry trends, hiring best practices, and expert advice on shaping the future of your workforce.`
+  Stay tuned to BAM hire's insights section for ongoing analysis of industry trends, hiring best practices, and expert advice on shaping the future of your workforce.`,
+        image: "/business2.jpg"
     },
     {
         id: "company-announcement",
@@ -226,7 +229,8 @@ export const newsItems: NewsItem[] = [
   
   BAM hire is committed to fostering an inclusive work environment where diverse talent can thrive. The company values innovation, collaboration, and personal growth, striving to build long-term relationships with both clients and candidates.
   
-  As the world of work continues to evolve, BAM hire remains at the forefront, providing unparalleled workforce solutions that drive success for both businesses and individuals. With a focus on creating meaningful connections, BAM hire is reshaping the future of work.`
+  As the world of work continues to evolve, BAM hire remains at the forefront, providing unparalleled workforce solutions that drive success for both businesses and individuals. With a focus on creating meaningful connections, BAM hire is reshaping the future of work.`,
+        image: "/business3.jpg"
     }
 ];
 

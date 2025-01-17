@@ -7,19 +7,22 @@ export function NewsSection() {
   const news = [
     {
       category: "PRESS RELEASE",
-      title: "BAM hire Strengthens Global Reach with New Strategic Partnerships",
-      link: "#",
+      title:
+        "BAM hire Strengthens Global Reach with New Strategic Partnerships",
+      link: "/news/global-expansion",
     },
     {
       category: "INSIGHT",
-      title: "The Future of Talent Acquisition: How AI and Automation Are Reshaping Recruitment",
-      link: "#",
+      title:
+        "The Future of Talent Acquisition: How AI and Automation Are Reshaping Recruitment",
+      link: "/news/digital-talent-acquisition",
     },
 
     {
       category: "IN THE NEWS",
-      title: "BAM hire Expands Global Footprint with Strategic Talent Partnerships",
-      link: "#",
+      title:
+        "BAM hire Expands Global Footprint with Strategic Talent Partnerships",
+      link: "/news/company-announcement",
     },
   ];
 
