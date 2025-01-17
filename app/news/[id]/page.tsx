@@ -12,9 +12,9 @@ import { Card, CardContent } from "@/components/ui/card";
 export default async function NewsArticlePage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
-  const newsId = params.id;
+  const newsId = (await params).id;
   const newsToDisplay = newsItems.find((item) => item.id === newsId);
 
   if (!newsToDisplay) {
