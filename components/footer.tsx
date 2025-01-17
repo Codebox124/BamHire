@@ -56,14 +56,14 @@ export function Footer() {
         <div className="mt-12 border-t border-zinc-700 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
             <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-              <Link href="#" className="hover:text-white">
+              <Link href="/privacy" className="hover:text-white">
                 Privacy Policy
               </Link>
 
-              <Link href="#" className="hover:text-white">
-                Tearms Of Services
+              <Link href="/terms" className="hover:text-white">
+                Terms Of Services
               </Link>
-              <Link href="#" className="hover:text-white">
+              <Link href="/cookies" className="hover:text-white">
                 Cookie Policy
               </Link>
 
