@@ -10,7 +10,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-earth-to-sky px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 lg:grid-cols-2">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
                 Pioneering the Future of Work
@@ -134,7 +134,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="px-4 py-16 md:py-24">
+      {/* <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold text-[#a25f35] md:text-4xl">
             Our Leadership Team
@@ -167,7 +167,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-earth-to-sky px-4 py-16 text-white md:py-24">
