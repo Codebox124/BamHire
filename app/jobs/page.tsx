@@ -261,7 +261,7 @@ export default function JobsPage() {
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg md:aspect-auto">
               <Image
-                src="/placeholder.svg"
+                src="/home_achievment.jpg"
                 alt="Happy professionals working together"
                 fill
                 className="object-cover"
