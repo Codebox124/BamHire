@@ -16,13 +16,13 @@ export function Header() {
     <header className="border-b">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         <Link href="/" className="text-2xl font-bold text-[#a25f35]">
-          Bamhire
+          Bam Hire
         </Link>
 
         <NavigationMenu className="hidden md:block">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>About Bamhire</NavigationMenuTrigger>
+              <NavigationMenuTrigger>About BAM Hire</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
@@ -32,7 +32,7 @@ export function Header() {
                         href="/"
                       >
                         <div className="mt-4 text-lg font-medium text-white">
-                          Bamhire
+                          BAM Hire
                         </div>
                         <p className="text-sm leading-tight text-white/90">
                           Connecting Talent with Opportunity
@@ -43,7 +43,7 @@ export function Header() {
                   <ListItem href="/about" title="About Us">
                     Learn about our history and values
                   </ListItem>
-                  <ListItem href="/advantage" title="The Bamhire Magic">
+                  <ListItem href="/advantage" title="The BAM Hire Magic">
                     Discover our unique solutions
                   </ListItem>
                 </ul>

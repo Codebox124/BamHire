@@ -13,19 +13,19 @@ export default function Page() {
                 we use them, and your choices regarding their use. By continuing to use
                 our website (
                 <a
-                    href="https://www.bamhire.com/"
+                    href="https://www.BAM Hire.com/"
                     className="text-blue-600 hover:underline"
                 >
-                    https://www.bamhire.com/
+                    https://www.BAM Hire.com/
                 </a>
                 ), you consent to the use of cookies as described in this policy.
             </p>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    1. What Are Cookies?
+                     What Are Cookies?
                 </h2>
                 <p className="mb-4">
                     Cookies are small text files that are stored on your device (computer,
@@ -35,11 +35,11 @@ export default function Page() {
                 </p>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    2. Types of Cookies We Use
+                     Types of Cookies We Use
                 </h2>
                 <p className="mb-[10px]">We use the following types of cookies on our website:
                 </p>
@@ -63,11 +63,11 @@ export default function Page() {
                 </ul>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    3. How We Use Cookies
+                    How We Use Cookies
                 </h2>
                 <p className="mb-[10px]">We use cookies to:</p>
                 <ul className="list-disc pl-6 space-y-2">
@@ -80,11 +80,11 @@ export default function Page() {
                 </ul>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    4. Managing Your Cookie Preferences
+                     Managing Your Cookie Preferences
                 </h2>
                 <p className="mb-4">
                     You have the right to control the use of cookies. Here’s how:
@@ -102,11 +102,11 @@ export default function Page() {
                 </ul>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    5. Third-Party Cookies
+                     Third-Party Cookies
                 </h2>
                 <p className="mb-4">
                 We may allow third-party services to place cookies on your device for analytics, advertising, or other purposes. These third parties have their own privacy and cookie policies, and we encourage you to review them.
@@ -114,22 +114,22 @@ export default function Page() {
                 </p>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    6. Updates to This Policy
+                     Updates to This Policy
                 </h2>
                 <p className="mb-4">
                 We may update this Cookie Policy from time to time to reflect changes in our practices or for legal reasons. Any updates will be posted on this page with an updated "Effective Date."
                 </p>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <section>
                 <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">
-                    7. Contact Us
+                    Contact Us
                 </h2>
                 <p className="mb-4">
                     If you have any questions about this Cookie Policy or how we use
@@ -142,15 +142,15 @@ export default function Page() {
                     <br />
                     Email:{" "}
                     <a
-                        href="mailto:recruiting@bamhire.com"
+                        href="mailto:recruiting@BAM Hire.com"
                         className="text-blue-600 hover:underline"
                     >
-                        recruiting@bamhire.com
+                        recruiting@BAM Hire.com
                     </a>
                 </p>
             </section>
 
-            <hr className="border-gray-700 my-6" />
+            
 
             <p className="text-center text-gray-600">
                 Thank you for choosing BAM. We are committed to providing you with a

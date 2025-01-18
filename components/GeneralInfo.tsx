@@ -58,7 +58,7 @@ function GeneralInfo() {
         className='justify-center flex items-center'>
         <div className='mr-[20px]'>
           <p>Email</p>
-          <p>recruiting@bamhire.com</p>
+          <p>recruiting@BAM Hire.com</p>
         </div>
         <div>
           <p>Phone:</p>

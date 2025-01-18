@@ -67,17 +67,17 @@ export default function ContactPage() {
           </div>
           <div className="lg:pl-12 flex items-center justify-center">
             <div className="grid gap-6 sm:grid-cols-2">
-              <Card>
+              {/* <Card>
                 <CardContent className="p-4 flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-[#a25f35]" />
                   <div>
                     <h3 className="font-semibold text-[#a25f35]">Address</h3>
                     <p className="text-sm text-gray-600">
-                      123 Bamhire Street, City, State 12345
+                      123 BAM Hire Street, City, State 12345
                     </p>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
               <Card>
                 <CardContent className="p-4 flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-[#a25f35]" />
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-[#a25f35]" />
                   <div>
                     <h3 className="font-semibold text-[#a25f35]">Email</h3>
-                    <p className="text-sm text-gray-600">contact@bamhire.com</p>
+                    <p className="text-sm text-gray-600">contact@BAM Hire.com</p>
                   </div>
                 </CardContent>
               </Card>

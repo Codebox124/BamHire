@@ -10,26 +10,24 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[2fr_1fr_1fr]">
           <div>
             <Link href="/" className="text-2xl font-bold">
-              Bamhire
+              BAM Hire
             </Link>
-            <p className="mt-4 max-w-md text-gray-400">
-              We unlock endless possibilities by connecting individuals to meaningful work that enhances their lives and bringing people together to drive innovation and growth.
-            </p>
+            
           </div>
 
           <div>
-            <h3 className="mb-4 font-semibold uppercase">About Bamhire</h3>
+            <h3 className="mb-4 font-semibold uppercase">About Bam hire</h3>
             <ul className="space-y-3 text-gray-400">
 
               <li>
-                <Link href="#" className="hover:text-white">
-                  Bamhire Talent Promise
+                <Link href="/about" className="hover:text-white">
+                  BAM Hire Talent Promise
                 </Link>
               </li>
 
               <li>
-                <Link href="#" className="hover:text-white">
-                  Careers at Bamhire
+                <Link href="/jobs" className="hover:text-white">
+                  Careers at BAM Hire
                 </Link>
               </li>
             </ul>
@@ -39,7 +37,7 @@ export function Footer() {
             <h3 className="mb-4 font-semibold uppercase">Contact Us</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <Link href="mailto:recruiting@bamhire.com" className="hover:text-white">
+                <Link href="mailto:recruiting@BAM Hire.com" className="hover:text-white">
                   Email Us
                 </Link>
               </li>
@@ -77,7 +75,7 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-8 text-center text-sm text-gray-400">
-            Copyright {currentYear} Bamhire Inc.
+            Copyright {currentYear} BAM Hire LLC.
           </p>
         </div>
       </div>

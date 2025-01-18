@@ -228,10 +228,10 @@ export default function JobsPage() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold md:text-4xl">
-                Why Work With Bamhire?
+                Why Work With BAM Hire?
               </h2>
               <p className="text-lg text-muted-foreground">
-                At Bamhire, we&apos;re committed to connecting talented
+                At BAM Hire, we&apos;re committed to connecting talented
                 individuals with opportunities that matter. Here&apos;s why you
                 should choose us for your next career move:
               </p>
@@ -256,7 +256,7 @@ export default function JobsPage() {
                 size="lg"
                 className="mt-6 bg-[#a25f35] text-white hover:bg-[#9e7a52]"
               >
-                <Link href="/about">Learn More About Bamhire</Link>
+                <Link href="/about">Learn More About BAM Hire</Link>
               </Button>
             </div>
             <div className="relative aspect-square overflow-hidden rounded-lg md:aspect-auto">
@@ -328,7 +328,7 @@ export default function JobsPage() {
           </h2>
           <p className="mb-8 text-lg text-white">
             Join thousands of professionals who have found their dream jobs
-            through Bamhire. Let&apos;s start your journey to a fulfilling
+            through BAM Hire. Let&apos;s start your journey to a fulfilling
             career today.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">

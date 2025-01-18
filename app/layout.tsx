@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bamhire - Connecting Talent with Opportunity",
+  title: "BAM Hire - Connecting Talent with Opportunity",
   description: "Global workforce solutions and staffing agency",
 };
 

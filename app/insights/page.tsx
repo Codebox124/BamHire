@@ -24,11 +24,11 @@ export default function InsightsPage() {
       {/* Content Tabs */}
       <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <Tabs defaultValue="insights" className="space-y-8">
+          <Tabs defaultValue="press" className="space-y-8">
             <TabsList className="w-full justify-start">
               <TabsTrigger value="press">Press Releases</TabsTrigger>
-              <TabsTrigger value="news">News</TabsTrigger>
               <TabsTrigger value="insights">Insights</TabsTrigger>
+              <TabsTrigger value="community">Community</TabsTrigger>
             </TabsList>
 
             <TabsContent value="insights">
@@ -142,10 +142,10 @@ export default function InsightsPage() {
               </Card>
             </TabsContent>
 
-            <TabsContent value="news">
+            <TabsContent value="community">
               <Card>
                 <CardHeader>
-                  <Badge className="w-fit bg-[#63a1c4] text-white">News</Badge>
+                  <Badge className="w-fit bg-[#63a1c4] text-white">Community</Badge>
                   <CardTitle className="text-2xl text-[#a25f35]">
                     BAM hire Expands Global Reach with Strategic Partnerships
                   </CardTitle>

@@ -7,20 +7,20 @@ export default function TermsOfService() {
             <p className="mb-6">
                 Welcome to <strong>BAM!</strong> By accessing or using our website (
                 <a
-                    href="https://www.bamhire.com/"
+                    href="https://www.BAM Hire.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 underline"
                 >
-                    https://www.bamhire.com/
+                    https://www.BAM Hire.com/
                 </a>
                 ) and services, you agree to comply with and be bound by these Terms of
                 Service. Please read them carefully. If you do not agree to these
                 terms, you must not use our website or services.
             </p>
-            <hr className="border-gray-700 my-6" />
+            
 
-            <h2 className="text-2xl text-[#8B654B] font-bold mb-4">1. Use of Our Services</h2>
+            <h2 className="text-2xl text-[#8B654B] font-bold mb-4">Use of Our Services</h2>
             <h3 className="text-xl font-semibold mb-2">Eligibility:</h3>
             <p className="mb-4">
                 You must be at least 18 years old or the legal age in your jurisdiction
@@ -35,9 +35,9 @@ export default function TermsOfService() {
                 <li>Attempt to gain unauthorized access to any part of the website or its systems.</li>
             </ul>
 
-            <hr className="border-gray-700 my-6" />
+            
 
-            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">2. Account Registration and Responsibilities</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">Account Registration and Responsibilities</h2>
             <p className="mb-4">
                 To access certain services, you may need to create an account. You are
                 responsible for:
@@ -52,9 +52,9 @@ export default function TermsOfService() {
                 violate these terms.
             </p>
 
-            <hr className="border-gray-700 my-6" />
+            
 
-            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">3. Content and Intellectual Property</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">Content and Intellectual Property</h2>
             <h3 className="text-xl font-semibold mb-2">Ownership:</h3>
             <p className="mb-4">
                 All content on our website, including text, graphics, logos, and
@@ -76,9 +76,9 @@ export default function TermsOfService() {
                 that your content does not violate any laws or third-party rights.
             </p>
 
-            <hr className="border-gray-700 my-6" />
+            
 
-            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">4. Service Availability</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]"> Service Availability</h2>
             <p className="mb-6">
                 We strive to ensure our website and services are accessible at all
                 times. However, we do not guarantee uninterrupted or error-free
@@ -86,9 +86,9 @@ export default function TermsOfService() {
                 website or services without notice.
             </p>
 
-            <hr className="border-gray-700 my-6" />
+            
 
-            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">5. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]"> Limitation of Liability</h2>
             <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>
                     BAM is not liable for any indirect, incidental, or consequential
@@ -100,9 +100,9 @@ export default function TermsOfService() {
                 </li>
             </ul>
 
-            <hr className="border-gray-700 my-6" />
+            
 
-            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]">6. Contact Us</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#8B654B]"> Contact Us</h2>
             <p className="mb-4">If you have any questions about these Terms, please contact us:</p>
             <address className="not-italic">
                 <strong>BAM</strong>
@@ -113,8 +113,8 @@ export default function TermsOfService() {
                 </a>
                 <br />
                 Email:{" "}
-                <a href="mailto:recruiting@bamhire.com" className="text-blue-600 underline">
-                    recruiting@bamhire.com
+                <a href="mailto:recruiting@BAM Hire.com" className="text-blue-600 underline">
+                    recruiting@BAM Hire.com
                 </a>
             </address>
         </div>

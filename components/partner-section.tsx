@@ -9,10 +9,10 @@ export function PartnerSection() {
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="space-y-6">
             <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-            Looking for a reliable partner to drive success? Together, we unlock endless potential. 
+            Looking for a reliable partner to drive success?
             </h2>
             <p className="text-lg text-muted-foreground">
-            At BAM hire, we specialize in connecting job seekers with employers by offering personalized solutions and global opportunities. Let us collaborate to help your business grow and thrive in todays dynamic workforce landscape. Reach out to see how we can assist you.
+            At BAM Hire, we specialize in connecting employers with talented job-seekers by offering personalized solutions and global opportunities. Let us collaborate to help your business grow and thrive in today's dynamic workforce landscape. Reach out to us to see how we can assist you.
             </p>
             <Button
               asChild

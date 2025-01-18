@@ -37,14 +37,14 @@ export function MobileMenu() {
               className="text-2xl font-bold text-[#a25f35]"
               onClick={() => setOpen(false)}
             >
-              Bamhire
+              BAM Hire
             </Link>
           </SheetTitle>
         </SheetHeader>
         <nav className="mt-8">
           <Accordion type="single" collapsible>
             <AccordionItem value="about">
-              <AccordionTrigger>About Bamhire</AccordionTrigger>
+              <AccordionTrigger>About BAM Hire</AccordionTrigger>
               <AccordionContent>
                 <ul className="ml-4 space-y-2">
                   <li>
@@ -62,7 +62,7 @@ export function MobileMenu() {
                       className="block py-2"
                       onClick={() => setOpen(false)}
                     >
-                      The Bamhire Magic
+                      The BAM Hire Magic
                     </Link>
                   </li>
                 </ul>

@@ -16,7 +16,7 @@ export default function AboutPage() {
                 Pioneering the Future of Work
               </h1>
               <p className="text-xl text-white/90">
-                For over two decades, Bamhire has been at the forefront of
+                For over two decades, BAM Hire has been at the forefront of
                 workforce innovation, connecting talented individuals with
                 opportunities that matter.
               </p>
@@ -105,7 +105,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  Founded in 2000, Bamhire has grown from a local staffing
+                  Founded in 2000, BAM Hire has grown from a local staffing
                   agency to a global workforce solutions provider. Our journey
                   has been marked by continuous innovation and adaptation to
                   changing workforce needs.
@@ -174,7 +174,7 @@ export default function AboutPage() {
                   </p>
                   <p className="text-sm text-muted-foreground">
                     Brief description of the executive&apos;s role and
-                    experience at Bamhire.
+                    experience at BAM Hire.
                   </p>
                 </CardContent>
               </Card>
@@ -191,7 +191,7 @@ export default function AboutPage() {
           </h2>
           <p className="mb-8 text-lg text-white/90">
             Be part of a company that&apos;s shaping the future of work. Explore
-            career opportunities at Bamhire.
+            career opportunities at BAM Hire.
           </p>
           <Button
             asChild

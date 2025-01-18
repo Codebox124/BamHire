@@ -6,20 +6,20 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 export function NewsSection() {
   const news = [
     {
-      category: "PRESS RELEASE",
+      category: "PRESS RELEASES",
       title:
         "BAM hire Strengthens Global Reach with New Strategic Partnerships",
       link: "/news/global-expansion",
     },
     {
-      category: "INSIGHT",
+      category: "INSIGHTS",
       title:
         "The Future of Talent Acquisition: How AI and Automation Are Reshaping Recruitment",
       link: "/news/digital-talent-acquisition",
     },
 
     {
-      category: "IN THE NEWS",
+      category: "Community",
       title:
         "BAM hire Expands Global Footprint with Strategic Talent Partnerships",
       link: "/news/company-announcement",
