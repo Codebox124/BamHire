@@ -38,7 +38,7 @@ export function AwardsSection() {
                   <p className="text-muted-foreground">Years of Excellence</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">3+</h3>
+                  <h3 className="text-4xl font-bold text-[#a25f35]">3</h3>
                   <p className="text-muted-foreground">Continents Worldwide</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
