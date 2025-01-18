@@ -15,10 +15,11 @@ export default function InsightsPage() {
 
   useEffect(() => {
     const tab = searchParams.get("tab");
-    if (TABS.includes(tab)) {
+    if (tab && TABS.includes(tab)) { 
       setActiveTab(tab);
     }
   }, [searchParams]);
+  
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
