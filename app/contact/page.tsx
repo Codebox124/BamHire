@@ -47,7 +47,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-earth-to-sky">
-      <main className="container mx-auto py-16 bg-white/90 rounded-lg shadow-lg px-20 box-border">
+      <main className="container mx-auto py-16 bg-white/90 rounded-lg shadow-lg md:px-20 px-4 box-border">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl font-bold text-[#a25f35] mb-6">
@@ -123,17 +123,7 @@ export default function ContactPage() {
           </div>
           <div className="lg:pl-12 flex items-center justify-center">
             <div className="grid gap-6 sm:grid-cols-2">
-              {/* <Card>
-                <CardContent className="p-4 flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-[#a25f35]" />
-                  <div>
-                    <h3 className="font-semibold text-[#a25f35]">Address</h3>
-                    <p className="text-sm text-gray-600">
-                      123 BAM Hire Street, City, State 12345
-                    </p>
-                  </div>
-                </CardContent>
-              </Card> */}
+              
               <Card>
                 <CardContent className="p-4 flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-[#a25f35]" />
