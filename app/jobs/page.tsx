@@ -323,7 +323,7 @@ export default function JobsPage() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="bg-[#a25f35] px-4 py-16 text-white md:py-24">
+      {/* <section className="bg-[#a25f35] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Ready to Take the Next Step in Your Career?
@@ -351,7 +351,7 @@ export default function JobsPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
       <JobApplicationModal
         isOpen={!!selectedJob}
         onClose={handleCloseModal}

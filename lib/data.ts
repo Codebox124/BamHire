@@ -51,9 +51,9 @@ export const jobs: Job[] = [
             "Ability to work well in a collaborative team setting"
         ],
         compensation: {
-            dailyMinimum: "$350 + per day",
+            salary: "$350000-$500000 annually ",
             percentage: "32–35% of collections after reaching the minimum guarantee",
-            relocationBonus: "$5,000",
+           
             newGradInfo: "Typically exceed their daily minimum in collections within 90 days"
         }
     },
@@ -82,9 +82,9 @@ export const jobs: Job[] = [
             "Ability to work in a fast-paced, high-tech environment"
         ],
         compensation: {
-            dailyMinimum: "$800–$850 per day",
+            salary: "$350000 annually",
             percentage: "32–35% of collections after reaching the minimum guarantee",
-            relocationBonus: "$5,000",
+            
             newGradInfo: "Typically exceed their daily minimum in collections within 90 days"
         }
     },
