@@ -274,7 +274,7 @@ export default function JobsPage() {
       </section>
 
       {/* Job Seeker Resources Section */}
-      <section className="bg-gray-50 px-4 py-16 md:py-24">
+      {/* <section className="bg-gray-50 px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Job Seeker Resources
@@ -320,7 +320,7 @@ export default function JobsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="bg-[#a25f35] px-4 py-16 text-white md:py-24">

@@ -49,7 +49,13 @@ export const jobs: Job[] = [
             "Valid medical license to practice in Oklahoma",
             "Strong interpersonal and communication skills",
             "Ability to work well in a collaborative team setting"
-        ]
+        ],
+        compensation: {
+            dailyMinimum: "$350 + per day",
+            percentage: "32–35% of collections after reaching the minimum guarantee",
+            relocationBonus: "$5,000",
+            newGradInfo: "Typically exceed their daily minimum in collections within 90 days"
+        }
     },
     {
         id: "associate-dentist",
