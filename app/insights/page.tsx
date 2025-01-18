@@ -14,11 +14,12 @@ export default function InsightsPage() {
   const [activeTab, setActiveTab] = useState("press-releases");
 
   useEffect(() => {
-    const tab = searchParams.get("tab");
-    if (tab && TABS.includes(tab)) { 
+    const tab = searchParams.get("tab"); // `tab` can be 'string | null'
+    if (tab !== null && TABS.includes(tab)) { // Ensure `tab` is not null
       setActiveTab(tab);
     }
   }, [searchParams]);
+  
   
   return (
     <main className="min-h-screen">
