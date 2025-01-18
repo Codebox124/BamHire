@@ -128,52 +128,47 @@ export default function InsightsPage() {
             </TabsContent>
 
             <TabsContent value="community">
-              <Card>
-                <CardHeader>
-                  <Badge className="w-fit bg-[#63a1c4] text-white">Community</Badge>
-                  <CardTitle className="text-2xl text-[#a25f35]">
-                    BAM hire Expands Global Reach with Strategic Partnerships
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4 text-muted-foreground">
-                    BAM hire is thrilled to announce the expansion of its
-                    international presence through new strategic partnerships
-                    with leading recruitment agencies across key global markets.
-                    This exciting development allows BAM hire to offer an even
-                    broader array of staffing solutions tailored to meet the
-                    unique needs of businesses and job seekers worldwide.
-                  </p>
-                  <p className="mb-4 text-muted-foreground">
-                    These partnerships will strengthen BAM hire&apos;s ability
-                    to connect businesses with top-tier talent and provide
-                    professionals with life-changing career opportunities in
-                    industries ranging from technology to healthcare and beyond.
-                  </p>
-                  <p className="mb-4 text-muted-foreground">
-                    With a growing global footprint, BAM hire is positioning
-                    itself to better serve clients and candidates, ensuring
-                    companies have access to the skilled workforce they need to
-                    drive innovation and growth. In addition, job seekers will
-                    benefit from increased access to diverse roles in new
-                    regions, furthering their career aspirations.
-                  </p>
-                  <p className="mb-4 text-muted-foreground">
-                    As part of its commitment to fostering collaboration and
-                    inclusivity in the workforce, BAM hire will continue to
-                    innovate and refine its services, ensuring they meet the
-                    demands of an ever-evolving job market.
-                  </p>
-                  <p className="text-[#a25f35] font-semibold">
-                    Through these new partnerships, BAM hire is poised to
-                    enhance its reputation as a forward-thinking leader in
-                    workforce solutions, committed to creating meaningful
-                    connections and empowering both businesses and individuals
-                    to succeed on a global scale.
-                  </p>
-                </CardContent>
-              </Card>
-            </TabsContent>
+  <Card>
+    <CardHeader>
+      <Badge className="w-fit bg-[#63a1c4] text-white">Community</Badge>
+      <CardTitle className="text-2xl text-[#a25f35]">
+        Giving Back: How BAM Hire Supports the Community
+      </CardTitle>
+    </CardHeader>
+    <CardContent>
+      <p className="mb-4 text-muted-foreground">
+        At BAM Hire, we believe that building a better community goes far beyond staffing and recruiting. While our primary mission is to connect talented individuals with meaningful opportunities, we’re also deeply committed to supporting those in need. Whether someone is searching for their next career step or facing challenges that require urgent help, we aim to make a difference.
+      </p>
+      <p className="mb-4 text-muted-foreground font-semibold text-[#a25f35]">
+        Our Commitment to Giving Back
+      </p>
+      <p className="mb-4 text-muted-foreground">
+        We actively support organizations that align with our values of compassion, resilience, and making a positive impact. Here are some of the causes we proudly contribute to:
+      </p>
+      <ul className="list-disc ml-6 mb-4 text-muted-foreground">
+        <li>
+          <strong>Texas Food Bank:</strong> Hunger is an issue no one should face. That’s why we partner with the Texas Food Bank to help ensure families and individuals have access to nutritious meals. Every donation helps fill plates and provides hope for those experiencing food insecurity.
+        </li>
+        <li>
+          <strong>Leukemia and Lymphoma Society:</strong> We’re dedicated to advancing health and wellness, which is why we support the Leukemia and Lymphoma Society. Their work in funding groundbreaking research and providing support to patients and families battling blood cancers is close to our hearts.
+        </li>
+        <li>
+          <strong>Palisades Wildfire Relief Program:</strong> Natural disasters can devastate communities in an instant. Through our contributions to the Palisades Wildfire Relief Program, we help those affected by wildfires recover and rebuild. This program provides essential resources to families, firefighters, and local communities impacted by wildfires.
+        </li>
+      </ul>
+      <p className="mb-4 text-muted-foreground">
+        At BAM Hire, we’re passionate about more than just filling roles—we care about building stronger, more resilient communities. Every action we take, whether it’s helping someone find their dream job or supporting those in crisis, stems from our commitment to being a force for good.
+      </p>
+      <p className="text-[#a25f35] font-semibold">
+        Join Us in Making an Impact
+      </p>
+      <p className="text-muted-foreground">
+        We encourage you to join us in supporting these incredible organizations. Together, we can make a difference for those in need and help build a brighter future for everyone.
+      </p>
+    </CardContent>
+  </Card>
+</TabsContent>
+
           </Tabs>
         </div>
         <div className="flex mt-5 justify-center items-center">
