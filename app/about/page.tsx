@@ -64,21 +64,21 @@ export default function AboutPage() {
               },
               {
                 icon: Users,
-                title: "Collaboration",
+                title: "Transparency",
                 description:
-                  "We believe in the power of working together to achieve extraordinary results.",
+                  "We believe in open, honest communication, fostering trust with our clients and candidates through every step of the hiring process.",
               },
               {
                 icon: Globe2,
-                title: "Global Reach",
+                title: "Authenticity",
                 description:
-                  "Our worldwide presence enables us to connect talent across borders.",
+                  "Staying true to who we are, we build genuine relationships that reflect our commitment to serving others with integrity.",
               },
               {
                 icon: Target,
-                title: "Innovation",
+                title: "Resilience",
                 description:
-                  "We continuously evolve and adapt to meet the changing needs of the workforce.",
+                  "Driven by a passion to make a difference, we face challenges head-on, adapting and persevering to create lasting success for those we serve.",
               },
             ].map((value) => (
               <Card key={value.title} className="border-none bg-gray-50">
@@ -105,15 +105,10 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-muted-foreground">
-                  Founded in 2000, BAM Hire has grown from a local staffing
-                  agency to a global workforce solutions provider. Our journey
-                  has been marked by continuous innovation and adaptation to
-                  changing workforce needs.
+                With over 20 years of experience, Bamhire has evolved from a local staffing agency into a global leader in workforce solutions. Our journey has been defined by constant innovation and adaptability to the ever-changing needs of the workforce.
                 </p>
                 <p className="text-muted-foreground">
-                  Today, we operate in over 50 countries, connecting millions of
-                  people to meaningful work opportunities while helping
-                  organizations build their future workforce.
+                Today, we operate in more than 50 countries, connecting millions of individuals with meaningful job opportunities while supporting organizations in shaping their future workforce.
                 </p>
               </div>
               <Button
@@ -130,16 +125,17 @@ export default function AboutPage() {
                   <p className="text-muted-foreground">Years of Excellence</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
+                  <h3 className="text-4xl font-bold text-[#a25f35]">3+</h3>
+                  <p className="text-muted-foreground">Continents Worldwide</p>
+                </div>
+                <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
                   <h3 className="text-4xl font-bold text-[#a25f35]">50+</h3>
-                  <p className="text-muted-foreground">Countries Worldwide</p>
+                  <p className="text-muted-foreground">Engaged fortune 500 Companies</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">1M+</h3>
-                  <p className="text-muted-foreground">Lives Impacted</p>
-                </div>
-                <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">10K+</h3>
-                  <p className="text-muted-foreground">Client Companies</p>
+                  <h3 className="text-4xl font-bold text-[#a25f35]">10+</h3>
+                  <p className="text-muted-foreground">Industries
+                  </p>
                 </div>
               </div>
             </div>
