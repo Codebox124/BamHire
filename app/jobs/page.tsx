@@ -29,12 +29,14 @@ import { jobs } from "@/lib/data";
 
 export default function JobsPage() {
   const [selectedJob, setSelectedJob] = useState<string | null>(null);
+  const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
 
   const featuredJobs = jobs.filter((job) => job.featured);
   const regularJobs = jobs.filter((job) => !job.featured);
 
-  const handleApply = (jobTitle: string) => {
+  const handleApply = (jobTitle: string, jobId: string) => {
     setSelectedJob(jobTitle);
+    setSelectedJobId(jobId);
   };
 
   const handleCloseModal = () => {
@@ -104,7 +106,7 @@ export default function JobsPage() {
         <Button
           variant="outline"
           className="flex-1 border-[#a25f35] text-[#a25f35] hover:bg-[#a25f35] hover:text-white"
-          onClick={() => handleApply(job.title)}
+          onClick={() => handleApply(job.title, job.id)}
         >
           Apply Now
         </Button>
@@ -354,6 +356,7 @@ export default function JobsPage() {
         isOpen={!!selectedJob}
         onClose={handleCloseModal}
         jobTitle={selectedJob || ""}
+        jobId={selectedJobId || ""}
       />
     </main>
   );

@@ -1,11 +1,50 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
 
 export default function ContactPage() {
+  const [firstName, setFirstName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    emailjs.init({
+      publicKey: "awugJzbSuj8lHQXlU",
+    });
+
+    const formData = new FormData(e.currentTarget);
+
+    const templateParams = {
+      user_name: firstName,
+      message: message,
+      form_email: formData.get("email") as string,
+      from_name: "BamHire",
+    };
+
+    emailjs.send("service_j2cxn4y", "template_wgl0n0p", templateParams).then(
+      (response) => {
+        toast({
+          title: "EMAIL SENT",
+          description: `${response.status} ${response.text}`,
+        });
+      },
+      (error) => {
+        toast({
+          title: "ERROR",
+          description: `${error.status} ${error.text}`,
+        });
+      }
+    );
+  };
+
   return (
     <div className="min-h-screen bg-earth-to-sky">
       <main className="container mx-auto py-16 bg-white/90 rounded-lg shadow-lg px-20 box-border">
@@ -18,7 +57,13 @@ export default function ContactPage() {
               We&apos;re here to help and answer any question you might have. We
               look forward to hearing from you.
             </p>
-            <form className="space-y-6">
+            <form
+              className="space-y-6"
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSubmit(e);
+              }}
+            >
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label
@@ -27,7 +72,12 @@ export default function ContactPage() {
                   >
                     First Name
                   </label>
-                  <Input id="first-name" name="first-name" required />
+                  <Input
+                    id="first-name"
+                    name="first-name"
+                    required
+                    onChange={(e) => setFirstName(e.target.value)}
+                  />
                 </div>
                 <div>
                   <label
@@ -55,7 +105,13 @@ export default function ContactPage() {
                 >
                   Message
                 </label>
-                <Textarea id="message" name="message" rows={4} required />
+                <Textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  required
+                  onChange={(e) => setMessage(e.target.value)}
+                />
               </div>
               <Button
                 type="submit"

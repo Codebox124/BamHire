@@ -12,23 +12,64 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 interface JobApplicationModalProps {
   isOpen: boolean;
   onClose: () => void;
   jobTitle: string;
+  jobId: string;
 }
 
 export function JobApplicationModal({
   isOpen,
   onClose,
   jobTitle,
+  jobId,
 }: JobApplicationModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const cover_letter = formData.get("coverLetter") as string;
+
+    if (jobTitle && jobId) {
+      emailjs.init({
+        publicKey: "awugJzbSuj8lHQXlU",
+      });
+
+      emailjs
+        .send("service_j2cxn4y", "template_5lk4zxi", {
+          job_name: jobTitle,
+          job_id: jobId,
+          // admin_email: "rajcodes733@gmail.com",
+          cover_letter: cover_letter,
+          to_name: "Bamhire Admin",
+          from_name: "Bamhire",
+          user_name: ((formData.get("firstName") as string) +
+            " " +
+            formData.get("lastName")) as string,
+        })
+        .then(
+          () => {
+            toast({
+              title: "Success",
+              description: "Job applied successfully",
+            });
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log(error, "FAILED...", error.text);
+          }
+        );
+    }
 
     // const formData = new FormData(e.currentTarget);
 
