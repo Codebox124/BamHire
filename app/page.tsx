@@ -16,10 +16,7 @@ export default function Home() {
             <h1 className="mb-6 text-4xl font-medium leading-tight md:text-5xl">
               Your Talent. Our Focus
             </h1>
-            <p className="mb-8 text-lg text-gray-200">
-              Team up with the organization redefining careers by eliminating barriers
-              and connecting individuals to opportunities that transform lives.
-            </p>
+            
             <Button
               asChild
               variant="outline"

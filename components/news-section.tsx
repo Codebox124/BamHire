@@ -19,7 +19,7 @@ export function NewsSection() {
     },
 
     {
-      category: "Community",
+      category: "COMMUNITY",
       title:
         "BAM hire Expands Global Footprint with Strategic Talent Partnerships",
       link: "/news/company-announcement",

@@ -70,73 +70,58 @@ export default function InsightsPage() {
               </Card>
             </TabsContent>
 
-            <TabsContent value="press">
+            <TabsContent className="flex flex-col gap-4" value="press">
               <Card>
                 <CardHeader>
                   <Badge className="w-fit bg-[#a25f35] text-white">
                     Press Release
                   </Badge>
                   <CardTitle className="text-2xl text-[#a25f35]">
-                    BAM hire Revolutionizes Talent Acquisition Landscape
+                    Redefining Workforce Solutions with Industry Expertise and a Tailored Approach
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4 text-muted-foreground">
-                    BAM hire, a leading workforce solutions provider, is
-                    revolutionizing the talent acquisition landscape by offering
-                    businesses and professionals alike access to transformative
-                    opportunities. With a focus on connecting companies with
-                    top-tier talent and empowering individuals to find
-                    fulfilling careers, BAM hire bridges the gap between skill
-                    and demand.
+                  BAM hire, a leading workforce solutions provider, is revolutionizing the talent acquisition landscape by offering businesses and professionals alike access to transformative opportunities. With a focus on connecting companies with top-tier talent and empowering individuals to find fulfilling careers, BAM hire bridges the gap between skill and demand.
                   </p>
                   <p className="mb-4 text-muted-foreground">
-                    With a diverse range of services, BAM hire specializes in
-                    both temporary and permanent staffing solutions, tailored to
-                    meet the unique needs of businesses across multiple
-                    industries. The company&apos;s global reach and advanced
-                    technology allow them to tap into a wide pool of talent,
-                    ensuring clients find candidates who are not only qualified
-                    but also aligned with their organizational culture.
+                  With a diverse range of services, BAM hire specializes in both temporary and permanent staffing solutions, tailored to meet the unique needs of businesses across multiple industries. The company’s global reach and advanced technology allow them to tap into a wide pool of talent, ensuring clients find candidates who are not only qualified but also aligned with their organizational culture.
                   </p>
                   <blockquote className="border-l-4 border-[#a1a484] pl-4 italic mb-4">
-                    &quot;We understand the ever-evolving dynamics of the
-                    workforce,&quot; say Azam, Bogdan, and Mike, co-founders of
-                    BAM hire. &quot;Our mission is to connect businesses with
-                    the best talent, enabling growth and innovation while
-                    providing job seekers with opportunities that truly enhance
-                    their careers.&quot;
+                    &quot;We understand the ever-evolving dynamics of the workforce. Our mission is to connect businesses with the best talent, enabling growth and innovation while providing job seekers with opportunities that truly enhance their careers. Said Mike. &quot;
                   </blockquote>
                   <p className="mb-4 text-muted-foreground">
-                    By leveraging innovative recruitment strategies, BAM hire
-                    ensures a seamless hiring experience. Their team of
-                    experienced professionals works closely with clients to
-                    understand their specific needs, allowing them to provide
-                    customized workforce solutions. Whether businesses are
-                    looking for highly specialized professionals or need to fill
-                    large-scale temporary roles, BAM hire has the expertise to
-                    deliver.
+                  By leveraging innovative recruitment strategies, BAM hire ensures a seamless hiring experience. Their team of experienced professionals works closely with clients to understand their specific needs, allowing them to provide customized workforce solutions. Whether businesses are looking for highly specialized professionals or need to fill large-scale temporary roles, BAM hire has the expertise to deliver.
                   </p>
                   <p className="mb-4 text-muted-foreground">
-                    For job seekers, BAM hire offers a range of tools and
-                    support to help them navigate the job market. From resume
-                    building to interview preparation, the company is dedicated
-                    to ensuring candidates are not just prepared but also
-                    confident as they embark on their new career journeys.
+                  For job seekers, BAM hire offers a range of tools and support to help them navigate the job market. From resume building to interview preparation, the company is dedicated to ensuring candidates are not just prepared but also confident as they embark on their new career journeys.
                   </p>
                   <p className="mb-4 text-muted-foreground">
-                    BAM hire is committed to fostering an inclusive work
-                    environment where diverse talent can thrive. The company
-                    values innovation, collaboration, and personal growth,
-                    striving to build long-term relationships with both clients
-                    and candidates.
+                  BAM hire is committed to fostering an inclusive work environment where diverse talent can thrive. The company values innovation, collaboration, and personal growth, striving to build long-term relationships with both clients and candidates.
+                  </p>
+                  <p className="mb-4 text-muted-foreground">
+                  As the world of work continues to evolve, BAM hire remains at the forefront, providing unparalleled workforce solutions that drive success for both businesses and individuals. With a focus on creating meaningful connections, BAM hire is reshaping the future of work.
+                  </p>
+
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <Badge className="w-fit bg-[#a25f35] text-white">Press Release</Badge>
+                  <CardTitle className="text-2xl text-[#a25f35]">
+                    BAM Hire Recognized as Top Staffing Firm for 2024
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="mb-4 text-muted-foreground">
+                    We are proud to share that BAM Hire has been recognized as one of the top staffing firms for 2024 by Workforce Excellence Magazine. This award highlights our dedication to providing outstanding recruitment solutions and exceptional service to our clients and candidates.
+                  </p>
+                  <p className="mb-4 text-muted-foreground">
+                    This recognition is a testament to the hard work and expertise of our team and our unwavering focus on creating meaningful connections in the workforce.
                   </p>
                   <p className="text-[#a25f35] font-semibold">
-                    As the world of work continues to evolve, BAM hire remains
-                    at the forefront, providing unparalleled workforce solutions
-                    that drive success for both businesses and individuals. With
-                    a focus on creating meaningful connections, BAM hire is
-                    reshaping the future of work.
+                    We thank our clients and partners for their trust and support as we continue to innovate and lead in the staffing industry.
                   </p>
                 </CardContent>
               </Card>
@@ -191,6 +176,9 @@ export default function InsightsPage() {
             </TabsContent>
           </Tabs>
         </div>
+        <div className="flex mt-5 justify-center items-center">
+          <button className="border rounded-lg py-2 px-6 hover:bg-black hover:text-white">View More</button>
+           </div>
       </section>
     </main>
   );

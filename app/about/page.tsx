@@ -40,7 +40,7 @@ export default function AboutPage() {
           <h2 className="mb-12 text-center text-3xl font-bold text-[#a25f35] md:text-4xl">
             Our Core Values
           </h2>
-          <div className="text-xl text-center mb-5">
+          <div className="text-xl text-center mb-12">
             <h1>
               At BAM Hire, we pride ourselves on delivering a superior level of service, drawing on extensive sales and recruiting expertise combined with real-world delivery experience.
               This powerful blend enables us to vet candidates more thoroughly than industry competitors, ensuring we address our clients' most pressing challenges with top talent.

@@ -35,7 +35,7 @@ export function Header() {
                           BAM Hire
                         </div>
                         <p className="text-sm leading-tight text-white/90">
-                          Connecting Talent with Opportunity
+                        Your Talent. Our Focus.
                         </p>
                       </Link>
                     </NavigationMenuLink>
