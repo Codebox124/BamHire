@@ -5,7 +5,7 @@ export function JobSection() {
   return (
     <section className="bg-gray-50 py-16 text-center lg:py-24">
       <div className="mx-auto max-w-4xl px-4">
-        <h2 className="mb-4 text-4xl font-bold leading-tight lg:text-5xl">
+        <h2 className="mb-4 text-4xl text-[#0080ff] font-bold leading-tight lg:text-5xl">
           Looking for work? BAM.
           <br />
           The right job changes everything.
@@ -15,7 +15,7 @@ export function JobSection() {
         </p>
         <Button
           asChild
-          className="w-fit bg-[#a25f35] text-white hover:bg-[#ae7a52]"
+          className="w-fit bg-[#0080ff] text-white hover:bg-[#ae7a52]"
         >
           <Link href="/jobs">FIND A JOB</Link>
         </Button>

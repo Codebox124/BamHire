@@ -9,18 +9,18 @@ import { JobSection } from "@/components/job-section";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-20">
       <section className="grid md:grid-cols-2">
-        <div className="flex flex-col justify-center bg-[#a1a484] px-4 py-20 text-white md:px-12 md:py-32">
+        <div className="flex flex-col justify-center bg-[#001e3b] px-4 py-20 text-white md:px-12 md:py-32">
           <div className="mx-auto max-w-xl">
             <h1 className="mb-6 text-4xl font-medium leading-tight md:text-5xl">
-              Your Talent. Our Focus
+              Your Talent. Our Focus.
             </h1>
             
             <Button
               asChild
               variant="outline"
-              className="w-fit bg-transparent text-white hover:bg-white hover:text-[#a1a484]"
+              className="w-fit bg-transparent text-[#0080ff] bg-white  "
             >
               <Link href="/jobs" className="group">
                 Explore jobs

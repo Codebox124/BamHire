@@ -27,17 +27,17 @@ export function NewsSection() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {news.map((item) => (
-            <Card key={item.title} className="group relative">
+            <Card key={item.title} className="group border-black relative">
               <CardHeader>
                 <Badge
                   variant="secondary"
-                  className="w-fit bg-[#a1a484] text-white"
+                  className="w-fit bg-[#004589] text-white"
                 >
                   {item.category}
                 </Badge>
               </CardHeader>
               <CardContent className="space-y-4">
-                <h3 className="text-xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl text-black font-semibold">{item.title}</h3>
                 <Link
                   href={item.link}
                   className="inline-flex items-center gap-2 text-[#82b8c2] hover:underline"

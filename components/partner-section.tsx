@@ -8,7 +8,7 @@ export function PartnerSection() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
+            <h2 className="text-4xl text-[#0080ff] font-bold leading-tight lg:text-5xl">
             Together, we unlock endless potential.
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -16,7 +16,7 @@ export function PartnerSection() {
             </p>
             <Button
               asChild
-              className="w-fit bg-[#a25f35] text-white hover:bg-[#ae7a52]"
+              className="w-fit bg-[#0080ff] text-white hover:bg-[#ae7a52]"
             >
               <Link href="/contact">CONTACT US</Link>
             </Button>
