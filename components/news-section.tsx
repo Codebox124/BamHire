@@ -7,22 +7,18 @@ export function NewsSection() {
   const news = [
     {
       category: "PRESS RELEASES",
-      title:
-        "BAM hire Strengthens Global Reach with New Strategic Partnerships",
-      link: "/news/global-expansion",
+      title: "BAM Hire Recognized as Top Staffing Firm for 2024",
+      link: "/insights?tab=press-releases",
     },
     {
       category: "INSIGHTS",
-      title:
-        "The Future of Talent Acquisition: How AI and Automation Are Reshaping Recruitment",
-      link: "/news/digital-talent-acquisition",
+      title: "Navigating the Future of Talent Acquisition in a Digital World",
+      link: "/insights?tab=insights",
     },
-
     {
       category: "COMMUNITY",
-      title:
-        "BAM hire Expands Global Footprint with Strategic Talent Partnerships",
-      link: "/news/company-announcement",
+      title: "Giving Back: How BAM Hire Supports the Community",
+      link: "/insights?tab=community",
     },
   ];
 
