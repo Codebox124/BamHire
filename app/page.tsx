@@ -1,3 +1,4 @@
+"use client"
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,15 +7,47 @@ import { NewsSection } from "@/components/news-section";
 import { AwardsSection } from "@/components/awards-section";
 import { PartnerSection } from "@/components/partner-section";
 import { JobSection } from "@/components/job-section";
-
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 export default function Home() {
+  const firstpartofheader = ["Y","o","u","r"," ","T","a","l","e","n","t","."]
+  const secondpartofheader = [" ","O","u","r"," ","F","o","c","u","s","."]
+  const [showSecondPart, setShowSecondPart] = useState(false)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setShowSecondPart(true)
+    }, 3000)
+  }, [])
   return (
     <main className="pt-20">
       <section className="grid md:grid-cols-2">
         <div className="flex flex-col justify-center bg-[#001e3b] px-4 py-20 text-white md:px-12 md:py-32">
-          <div className="mx-auto max-w-xl">
+          <div className="mx-auto max-w-xl w-[80%]">
             <h1 className="mb-6 text-4xl font-medium leading-tight md:text-5xl">
-              Your Talent. Our Focus.
+              {firstpartofheader.map((item, index)=>{
+                return <motion.span
+                key={index}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{
+                  duration:0.1,
+                  ease:"easeInOut",
+                  delay: 0.09 * index
+                }}
+                >{item}</motion.span>
+              })}
+              {showSecondPart && secondpartofheader.map((item, index)=>{
+                return <motion.span
+                key={index}
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{
+                  duration:0.1,
+                  ease:"easeInOut",
+                  delay: 0.09 * index
+                }}
+                >{item}</motion.span>
+              })}
             </h1>
             
             <Button
