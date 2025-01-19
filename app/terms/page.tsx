@@ -5,7 +5,7 @@ export default function TermsOfService() {
         <div className="bg-white max-w-4xl  mx-auto text-[#4B5563] p-6 md:p-10 font-sans leading-relaxed">
             <h1 className="text-4xl pt-20 font-extrabold mb-6 text-[#0080ff]">Terms of Service</h1>
             <p className="mb-6">
-                Welcome to <strong>BAM!</strong> By accessing or using our website (
+                Welcome to <strong>BAMhire</strong> By accessing or using our website (
                 <a
                     href="https://www.BAM Hire.com/"
                     target="_blank"
@@ -58,7 +58,7 @@ export default function TermsOfService() {
             <h3 className="text-xl font-semibold mb-2">Ownership:</h3>
             <p className="mb-4">
                 All content on our website, including text, graphics, logos, and
-                software, is the property of BAM or its licensors and is protected by
+                software, is the property of BAMhire or its licensors and is protected by
                 intellectual property laws.
             </p>
             <h3 className="text-xl font-semibold mb-2">Limited License:</h3>
@@ -71,7 +71,7 @@ export default function TermsOfService() {
             <h3 className="text-xl font-semibold mb-2">User Content:</h3>
             <p className="mb-6">
                 If you submit content to our website (e.g., resumes, applications), you
-                grant BAM a worldwide, royalty-free license to use, store, and process
+                grant BAMhire a worldwide, royalty-free license to use, store, and process
                 your content to provide our services. You are responsible for ensuring
                 that your content does not violate any laws or third-party rights.
             </p>
@@ -91,7 +91,7 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-bold mb-4 text-[#0080ff]"> Limitation of Liability</h2>
             <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>
-                    BAM is not liable for any indirect, incidental, or consequential
+                BAMhire is not liable for any indirect, incidental, or consequential
                     damages arising from your use of our website or services.
                 </li>
                 <li>
@@ -105,7 +105,7 @@ export default function TermsOfService() {
             <h2 className="text-2xl font-bold mb-4 text-[#0080ff]"> Contact Us</h2>
             <p className="mb-4">If you have any questions about these Terms, please contact us:</p>
             <address className="not-italic">
-                <strong>BAM</strong>
+                <strong>BAMhire</strong>
                 <br />
                 Phone:{" "}
                 <a href="tel:+17087901398" className="text-blue-600 underline">
@@ -113,8 +113,8 @@ export default function TermsOfService() {
                 </a>
                 <br />
                 Email:{" "}
-                <a href="mailto:recruiting@BAM Hire.com" className="text-blue-600 underline">
-                    recruiting@BAM Hire.com
+                <a href="mailto:recruiting@BAMhire.com" className="text-blue-600 underline">
+                    recruiting@BAMhire.com
                 </a>
             </address>
         </div>
