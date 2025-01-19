@@ -24,8 +24,8 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="text-[#0080ff] hover:text-[#0080ff]">About BAM Hire</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
+                <ul className="grid   gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <li className="row-span-3 bg-[#0080ff] rounded-xl">
                     <NavigationMenuLink asChild>
                       <Link
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
@@ -34,13 +34,13 @@ export function Header() {
                         <div className="mt-4 text-lg font-medium text-white">
                           BAM Hire
                         </div>
-                        <p className="text-sm leading-tight text-white/90">
+                        <p className="text-sm leading-tight text-white">
                           Your Talent. Our Focus.
                         </p>
                       </Link>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem  href="/about" title="About Us">
+                  <ListItem href="/about" title="About Us">
                     Learn about our history and values
                   </ListItem>
                   <ListItem href="/advantage" title="The BAM Hire Magic">
