@@ -37,12 +37,12 @@ export function Footer() {
             <h3 className="mb-4 font-semibold uppercase">Contact Us</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <Link href="mailto:recruiting@BAM Hire.com" className="hover:text-white">
+                <Link href="mailto:recruiting@bamhire.com" className="hover:text-white">
                   Email Us
                 </Link>
               </li>
               <li>
-                <Link href="tel:7087901398" className="hover:text-white">
+                <Link href="tel:(708) 790-1398" className="hover:text-white">
                   Call Us
                 </Link>
               </li>
