@@ -1,9 +1,11 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Users, Globe2, Target } from "lucide-react";
-
+import { motion } from "framer-motion";
+import {fromLeftToRight, fromRightToLeft, fromBottomToTop} from "@/components/animations"
 export default function AboutPage() {
   return (
     <main className="min-h-screen">
@@ -11,7 +13,12 @@ export default function AboutPage() {
       <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="space-y-6">
+            <motion.div
+             initial={fromLeftToRight.initial}
+                       whileInView={fromLeftToRight.whileInView}
+                       transition={fromLeftToRight.transitition}
+                       viewport={fromLeftToRight.viewPort}
+            className="space-y-6">
               <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
                 Pioneering the Future of Work
               </h1>
@@ -20,8 +27,13 @@ export default function AboutPage() {
                 workforce innovation, connecting talented individuals with
                 opportunities that matter.
               </p>
-            </div>
-            <div className="relative aspect-video lg:aspect-square">
+            </motion.div>
+            <motion.div
+             initial={fromRightToLeft.initial}
+             whileInView={fromRightToLeft.whileInView}
+             transition={fromRightToLeft.transitition}
+             viewport={fromRightToLeft.viewPort}
+            className="relative aspect-video lg:aspect-square">
               <Image
                 src="/business1.jpg"
                 alt="Office environment"
@@ -29,7 +41,7 @@ export default function AboutPage() {
                 className="rounded-lg object-cover"
                 priority
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -37,10 +49,20 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-[#0080ff] md:text-4xl">
+          <motion.h2
+           initial={fromBottomToTop.initial}
+           whileInView={fromBottomToTop.whileInView}
+           transition={fromBottomToTop.transitition}
+           viewport={fromBottomToTop.viewPort}
+          className="mb-12 text-center text-3xl font-bold text-[#0080ff] md:text-4xl">
             Our Core Values
-          </h2>
-          <div className="text-xl text-black text-center mb-20">
+          </motion.h2>
+          <motion.div
+             initial={fromBottomToTop.initial}
+             whileInView={fromBottomToTop.whileInView}
+             transition={fromBottomToTop.transitition}
+             viewport={fromBottomToTop.viewPort}
+          className="text-xl text-black text-center mb-20">
             <h1>
               At BAM Hire, we pride ourselves on delivering a superior level of service, drawing on extensive sales and recruiting expertise combined with real-world delivery experience.
               This powerful blend enables us to vet candidates more thoroughly than industry competitors, ensuring we address our clients' most pressing challenges with top talent.
@@ -52,7 +74,7 @@ export default function AboutPage() {
 
 
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
@@ -80,8 +102,14 @@ export default function AboutPage() {
                 description:
                   "Driven by a passion to make a difference, we face challenges head-on, adapting and persevering to create lasting success for those we serve.",
               },
-            ].map((value) => (
-              <Card key={value.title} className="border-none bg-gray-50">
+            ].map((value, index) => (
+              <motion.div
+              initial={fromBottomToTop.initial}
+              whileInView={fromBottomToTop.whileInView}
+              transition={{...fromBottomToTop.transitition, delay:0.05*index}}
+              viewport={fromBottomToTop.viewPort}
+              key={value.title}>
+                <Card  className="border-none bg-gray-50">
                 <CardContent className="pt-6">
                   <value.icon className="mb-4 h-8 w-8 text-[#0080ff]" />
                   <h3 className="mb-2 text-xl font-semibold text-[#0080ff]">
@@ -90,6 +118,7 @@ export default function AboutPage() {
                   <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -99,7 +128,12 @@ export default function AboutPage() {
       <section className="bg-[#f5f5f5] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2">
-            <div className="space-y-6">
+            <motion.div 
+             initial={fromLeftToRight.initial}
+             whileInView={fromLeftToRight.whileInView}
+             transition={fromLeftToRight.transitition}
+             viewport={fromLeftToRight.viewPort}
+            className="space-y-6">
               <h2 className="text-3xl font-bold text-[#0080ff] md:text-4xl">
                 Our History
               </h2>
@@ -117,8 +151,13 @@ export default function AboutPage() {
               >
                 <Link href="/contact">Connect With Us</Link>
               </Button>
-            </div>
-            <div className="grid gap-4">
+            </motion.div>
+            <motion.div 
+             initial={fromRightToLeft.initial}
+             whileInView={fromRightToLeft.whileInView}
+             transition={fromRightToLeft.transitition}
+             viewport={fromRightToLeft.viewPort}
+            className="grid gap-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
                   <h3 className="text-4xl font-bold text-[#0080ff]">20+</h3>
@@ -138,7 +177,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -181,7 +220,12 @@ export default function AboutPage() {
 
       {/* CTA Section */}
       <section className="bg-[#004589] px-4 py-16 text-white md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
+        <motion.div
+           initial={fromBottomToTop.initial}
+           whileInView={fromBottomToTop.whileInView}
+           transition={fromBottomToTop.transitition}
+           viewport={fromBottomToTop.viewPort}
+            className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Join Our Growing Team
           </h2>
@@ -197,7 +241,7 @@ export default function AboutPage() {
           >
             <Link href="/careers">View Open Positions</Link>
           </Button>
-        </div>
+        </motion.div>
       </section>
     </main>
   );

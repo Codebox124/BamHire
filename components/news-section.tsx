@@ -1,8 +1,10 @@
+"use client"
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-
+import { motion } from "framer-motion";
+import {fromBottomToTop} from "@/components/animations"
 export function NewsSection() {
   const news = [
     {
@@ -26,8 +28,15 @@ export function NewsSection() {
     <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {news.map((item) => (
-            <Card key={item.title} className="group border-black relative">
+          {news.map((item, index) => (
+            <motion.div
+            key={item.title}
+            initial={fromBottomToTop.initial}
+            whileInView={fromBottomToTop.whileInView}
+            transition={{...fromBottomToTop.transitition, delay:0.05*index}}
+            viewport={fromBottomToTop.viewPort}
+            >
+            <Card  className="group border-black relative">
               <CardHeader>
                 <Badge
                   variant="secondary"
@@ -47,6 +56,7 @@ export function NewsSection() {
                 </Link>
               </CardContent>
             </Card>
+            </motion.div>
           ))}
         </div>
       </div>

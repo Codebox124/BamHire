@@ -104,3 +104,8 @@
 .bg-sage-to-sky {
   background: linear-gradient(to right, #a1a484, #82b8e2, #63a1c4);
 }
+
+
+html{/*cuz of animations*/
+  overflow-x: hidden;
+}
