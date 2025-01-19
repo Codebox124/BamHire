@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(()=>{
     setTimeout(()=>{
       setShowSecondPart(true)
-    }, 3000)
+    }, 2000)
   }, [])
   return (
     <main className="pt-20">

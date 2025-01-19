@@ -129,7 +129,7 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-[#0080ff]" />
                   <div>
                     <h3 className="font-semibold text-[#0080ff]">Phone</h3>
-                    <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-sm text-gray-600">(708) 790-1398</p>
                   </div>
                 </CardContent>
               </Card>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-[#0080ff]" />
                   <div>
                     <h3 className="font-semibold text-[#0080ff]">Email</h3>
-                    <p className="text-sm text-gray-600">contact@BAM Hire.com</p>
+                    <p className="text-sm text-gray-600">recruiting@bamhire.com</p>
                   </div>
                 </CardContent>
               </Card>

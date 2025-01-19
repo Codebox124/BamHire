@@ -44,7 +44,7 @@ export default function InsightsPage() {
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`px-4 py-2 text-xs border rounded ${activeTab === tab ? "bg-[#82b8c2] text-white" : "text-[#82b8c2]"
+                            className={`px-4 py-2 text-xs border rounded hover:bg-blue-500 hover:text-white ${activeTab === tab ? "bg-[#82b8c2] text-white" : "text-[#82b8c2]"
                                 }`}
                         >
                             {tab.replace("-", " ").toUpperCase()}

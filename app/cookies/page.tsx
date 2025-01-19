@@ -7,7 +7,7 @@ export default function Page() {
                 Cookie Policy
             </h1>
             <p className="mb-4">
-                At BAM, we use cookies and similar technologies to improve your browsing
+                At BAMhire, we use cookies and similar technologies to improve your browsing
                 experience, provide personalized services, and better understand how
                 our website is used. This Cookie Policy explains what cookies are, how
                 we use them, and your choices regarding their use. By continuing to use
@@ -136,16 +136,16 @@ export default function Page() {
                     cookies, please contact us:
                 </p>
                 <p className="mb-4">
-                    BAM
+                BAMhire
                     <br />
                     Phone: <a href="tel:(708) 790-1398" className="text-blue-600 hover:underline">(708) 790-1398</a>
                     <br />
                     Email:{" "}
                     <a
-                        href="mailto:recruiting@BAM Hire.com"
+                        href="mailto:recruiting@BAMhire.com"
                         className="text-blue-600 hover:underline"
                     >
-                        recruiting@BAM Hire.com
+                        recruiting@BAMhire.com
                     </a>
                 </p>
             </section>
@@ -153,7 +153,7 @@ export default function Page() {
             
 
             <p className="text-center text-gray-600">
-                Thank you for choosing BAM. We are committed to providing you with a
+                Thank you for choosing BAMhire. We are committed to providing you with a
                 transparent and user-friendly experience.
             </p>
         </div>
