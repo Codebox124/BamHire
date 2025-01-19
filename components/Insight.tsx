@@ -6,13 +6,14 @@ import { Badge } from "@/components/ui/badge";
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Suspense } from "react";
-
+import { motion } from "framer-motion";
+import { fromBottomToTop, fromTopToBottom } from "./animations";
 export default function InsightsPage() {
     const TABS = ["press-releases", "insights", "community"]
 
     const searchParams = useSearchParams();
     const [activeTab, setActiveTab] = useState("press-releases");
-
+    const [showMorePressReleases, setShowMorePressReleases] = useState(false)
     useEffect(() => {
         const tab = searchParams.get("tab"); // `tab` can be 'string | null'
         if (tab !== null && TABS.includes(tab)) { // Ensure `tab` is not null
@@ -26,7 +27,12 @@ export default function InsightsPage() {
             {/* Hero Section */}
             <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
                 <div className="mx-auto max-w-7xl">
-                    <div className="mx-auto max-w-3xl text-center">
+                    <motion.div
+                       initial={fromTopToBottom.initial}
+                       whileInView={fromTopToBottom.whileInView}
+                       transition={fromTopToBottom.transitition}
+                       viewport={fromTopToBottom.viewPort}
+                    className="mx-auto max-w-3xl text-center">
                         <h1 className="mb-6 text-4xl font-bold md:text-5xl">
                             News & Insights
                         </h1>
@@ -34,24 +40,34 @@ export default function InsightsPage() {
                             Stay informed with the latest workforce trends, industry insights,
                             and company updates from BAM hire.
                         </p>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 
             <section className="px-4 py-16 md:py-24">
                 <div className="flex justify-center   space-x-4 mb-8">
-                    {TABS.map((tab) => (
-                        <button
+                    {TABS.map((tab, index) => (
+                        <motion.button
+                        initial={fromTopToBottom.initial}
+                        whileInView={fromTopToBottom.whileInView}
+                        transition={{...fromTopToBottom.transitition, delay:0.07*index}}
+                        viewport={fromTopToBottom.viewPort}
+
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`px-4 py-2 text-xs border rounded hover:bg-blue-500 hover:text-white ${activeTab === tab ? "bg-[#82b8c2] text-white" : "text-[#82b8c2]"
                                 }`}
                         >
                             {tab.replace("-", " ").toUpperCase()}
-                        </button>
+                        </motion.button>
                     ))}
                 </div>
-                <div className="mx-auto max-w-7xl ">
+                <motion.div
+                   initial={fromBottomToTop.initial}
+                   whileInView={fromBottomToTop.whileInView}
+                   transition={fromBottomToTop.transitition}
+                   viewport={fromBottomToTop.viewPort}
+                className="mx-auto max-w-7xl ">
                     {activeTab === "press-releases" && (
 
                         <div className="flex flex-col gap-4">
@@ -74,7 +90,7 @@ export default function InsightsPage() {
                                     </p>
                                 </CardContent>
                             </Card>
-                            <Card>
+                            {showMorePressReleases && <Card>
                                 <CardHeader>
                                     <Badge className="w-fit bg-[#004589] text-white">
                                         Press Release
@@ -107,7 +123,7 @@ export default function InsightsPage() {
                                     </p>
 
                                 </CardContent>
-                            </Card>
+                            </Card>}
                         </div>
 
                     )}
@@ -190,9 +206,9 @@ export default function InsightsPage() {
                             </CardContent>
                         </Card>
                     )}
-                </div>
+                </motion.div>
                 <div className="flex mt-5 justify-center items-center">
-                    <button className="border rounded-lg py-2 px-6 hover:bg-black hover:text-white">View More</button>
+                    {activeTab==="press-releases" && <button onClick={()=>{setShowMorePressReleases(!showMorePressReleases)}} className="border rounded-lg py-2 px-6 hover:bg-black hover:text-white">View {showMorePressReleases?"Less":"More"}</button>}
                 </div>
             </section>
 

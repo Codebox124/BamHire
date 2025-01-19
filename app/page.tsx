@@ -9,6 +9,7 @@ import { PartnerSection } from "@/components/partner-section";
 import { JobSection } from "@/components/job-section";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import {fromBottomToTop} from "@/components/animations"
 export default function Home() {
   const firstpartofheader = ["Y","o","u","r"," ","T","a","l","e","n","t","."]
   const secondpartofheader = [" ","O","u","r"," ","F","o","c","u","s","."]
@@ -50,7 +51,13 @@ export default function Home() {
               })}
             </h1>
             
-            <Button
+           <motion.span
+           initial={fromBottomToTop.initial}
+           whileInView={fromBottomToTop.whileInView}
+           transition={fromBottomToTop.transitition}
+           viewport={fromBottomToTop.viewPort}
+           >
+           <Button
               asChild
               variant="outline"
               className="w-fit bg-transparent text-[#0080ff] bg-white  "
@@ -60,6 +67,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
+           </motion.span>
           </div>
         </div>
         <div className="relative aspect-square md:aspect-auto">
