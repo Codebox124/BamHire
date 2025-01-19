@@ -46,11 +46,11 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-earth-to-sky">
+    <div className="min-h-screen bg-[#001e3b] pt-20 flex justify-center items-center">
       <main className="container mx-auto py-16 bg-white/90 rounded-lg shadow-lg md:px-20 px-4 box-border">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h1 className="text-4xl font-bold text-[#a25f35] mb-6">
+            <h1 className="text-4xl font-bold text-[#0080ff] mb-6">
               Get in Touch
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -115,7 +115,7 @@ export default function ContactPage() {
               </div>
               <Button
                 type="submit"
-                className="w-full bg-[#a25f35] text-white hover:bg-[#9e7a52]"
+                className="w-full bg-[#0080ff] text-white hover:bg-[#9e7a52]"
               >
                 Send Message
               </Button>
@@ -126,27 +126,27 @@ export default function ContactPage() {
               
               <Card>
                 <CardContent className="p-4 flex items-start space-x-4">
-                  <Phone className="h-6 w-6 text-[#a25f35]" />
+                  <Phone className="h-6 w-6 text-[#0080ff]" />
                   <div>
-                    <h3 className="font-semibold text-[#a25f35]">Phone</h3>
+                    <h3 className="font-semibold text-[#0080ff]">Phone</h3>
                     <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
                   </div>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-4 flex items-start space-x-4">
-                  <Mail className="h-6 w-6 text-[#a25f35]" />
+                  <Mail className="h-6 w-6 text-[#0080ff]" />
                   <div>
-                    <h3 className="font-semibold text-[#a25f35]">Email</h3>
+                    <h3 className="font-semibold text-[#0080ff]">Email</h3>
                     <p className="text-sm text-gray-600">contact@BAM Hire.com</p>
                   </div>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="p-4 flex items-start space-x-4">
-                  <Clock className="h-6 w-6 text-[#a25f35]" />
+                  <Clock className="h-6 w-6 text-[#0080ff]" />
                   <div>
-                    <h3 className="font-semibold text-[#a25f35]">
+                    <h3 className="font-semibold text-[#0080ff]">
                       Business Hours
                     </h3>
                     <p className="text-sm text-gray-600">Mon-Fri: 9AM - 5PM</p>

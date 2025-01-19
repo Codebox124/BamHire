@@ -34,7 +34,7 @@ export function MobileMenu() {
           <SheetTitle>
             <Link
               href="/"
-              className="text-2xl font-bold text-[#a25f35]"
+              className="text-2xl font-bold text-[#0080ff]"
               onClick={() => setOpen(false)}
             >
               BAM Hire
@@ -44,13 +44,13 @@ export function MobileMenu() {
         <nav className="mt-8">
           <Accordion type="single" collapsible>
             <AccordionItem value="about">
-              <AccordionTrigger>About BAM Hire</AccordionTrigger>
+              <AccordionTrigger className="text-[#0080ff]">About BAM Hire</AccordionTrigger>
               <AccordionContent>
                 <ul className="ml-4 space-y-2">
                   <li>
                     <Link
                       href="/about"
-                      className="block py-2"
+                      className="block text-[#0080ff] py-2"
                       onClick={() => setOpen(false)}
                     >
                       About Us
@@ -59,7 +59,7 @@ export function MobileMenu() {
                   <li>
                     <Link
                       href="/advantage"
-                      className="block py-2"
+                      className="block text-[#0080ff] py-2"
                       onClick={() => setOpen(false)}
                     >
                       The BAM Hire Magic
@@ -70,28 +70,29 @@ export function MobileMenu() {
             </AccordionItem>
           </Accordion>
           <ul className="mt-4 space-y-2">
+           
             <li>
               <Link
                 href="/insights"
-                className="block py-2"
+                className="block py-2 text-[#0080ff]"
                 onClick={() => setOpen(false)}
               >
-                News & Insights
+                Press Releases
               </Link>
             </li>
             <li>
               <Link
-                href="/investors"
-                className="block py-2"
+                href="/contact"
+                className="block py-2 text-[#0080ff]"
                 onClick={() => setOpen(false)}
               >
-                Investors
+              Contact us
               </Link>
             </li>
           </ul>
         </nav>
         <div className="mt-8">
-          <Button asChild className="w-full">
+          <Button asChild className="w-full bg-[#0080ff] hover:bg-[#0080ff] ">
             <Link href="/jobs" onClick={() => setOpen(false)}>
               Find a Job
             </Link>

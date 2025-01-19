@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-earth-to-sky px-4 py-16 text-white md:py-24">
+      <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
@@ -37,10 +37,10 @@ export default function AboutPage() {
       {/* Values Section */}
       <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-[#a25f35] md:text-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-[#0080ff] md:text-4xl">
             Our Core Values
           </h2>
-          <div className="text-xl text-center mb-20">
+          <div className="text-xl text-black text-center mb-20">
             <h1>
               At BAM Hire, we pride ourselves on delivering a superior level of service, drawing on extensive sales and recruiting expertise combined with real-world delivery experience.
               This powerful blend enables us to vet candidates more thoroughly than industry competitors, ensuring we address our clients' most pressing challenges with top talent.
@@ -83,8 +83,8 @@ export default function AboutPage() {
             ].map((value) => (
               <Card key={value.title} className="border-none bg-gray-50">
                 <CardContent className="pt-6">
-                  <value.icon className="mb-4 h-8 w-8 text-[#a25f35]" />
-                  <h3 className="mb-2 text-xl font-semibold text-[#a25f35]">
+                  <value.icon className="mb-4 h-8 w-8 text-[#0080ff]" />
+                  <h3 className="mb-2 text-xl font-semibold text-[#0080ff]">
                     {value.title}
                   </h3>
                   <p className="text-muted-foreground">{value.description}</p>
@@ -100,7 +100,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-[#a25f35] md:text-4xl">
+              <h2 className="text-3xl font-bold text-[#0080ff] md:text-4xl">
                 Our History
               </h2>
               <div className="space-y-4">
@@ -113,7 +113,7 @@ export default function AboutPage() {
               </div>
               <Button
                 asChild
-                className="bg-[#a25f35] text-white hover:bg-[#9e7a52]"
+                className="bg-[#004589] hover:bg-blue-500 text-white "
               >
                 <Link href="/contact">Connect With Us</Link>
               </Button>
@@ -121,19 +121,19 @@ export default function AboutPage() {
             <div className="grid gap-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">20+</h3>
+                  <h3 className="text-4xl font-bold text-[#0080ff]">20+</h3>
                   <p className="text-muted-foreground">Years of Excellence</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">3</h3>
+                  <h3 className="text-4xl font-bold text-[#0080ff]">3</h3>
                   <p className="text-muted-foreground">Continents Worldwide</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">50+</h3>
+                  <h3 className="text-4xl font-bold text-[#0080ff]">50+</h3>
                   <p className="text-muted-foreground">Engaged fortune 500 Companies</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#a25f35]">10+</h3>
+                  <h3 className="text-4xl font-bold text-[#0080ff]">10+</h3>
                   <p className="text-muted-foreground">Industries
                   </p>
                 </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
       {/* Leadership Section */}
       {/* <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-[#a25f35] md:text-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-[#0080ff] md:text-4xl">
             Our Leadership Team
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -162,7 +162,7 @@ export default function AboutPage() {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                  <h3 className="mb-1 text-lg font-semibold text-[#a25f35]">
+                  <h3 className="mb-1 text-lg font-semibold text-[#0080ff]">
                     Executive Name {i}
                   </h3>
                   <p className="mb-2 text-sm text-muted-foreground">
@@ -180,7 +180,7 @@ export default function AboutPage() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="bg-earth-to-sky px-4 py-16 text-white md:py-24">
+      <section className="bg-[#004589] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Join Our Growing Team
@@ -193,7 +193,7 @@ export default function AboutPage() {
             asChild
             variant="outline"
             size="lg"
-            className="bg-transparent text-white hover:bg-white hover:text-[#a25f35]"
+            className="bg-transparent text-white hover:bg-white hover:text-[#0080ff]"
           >
             <Link href="/careers">View Open Positions</Link>
           </Button>

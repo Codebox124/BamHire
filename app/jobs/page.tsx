@@ -47,9 +47,9 @@ export default function JobsPage() {
     <Card key={job.id} className="flex flex-col">
       <CardHeader>
         <div className="flex items-center justify-between">
-          <CardTitle className="text-[#a25f35]">{job.title}</CardTitle>
+          <CardTitle className="text-[#004589]">{job.title}</CardTitle>
           {job.featured && (
-            <Badge className="bg-[#82b8e2] text-white">Featured</Badge>
+            <Badge className="bg-[#0080ff] text-white">Featured</Badge>
           )}
         </div>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -59,17 +59,17 @@ export default function JobsPage() {
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="mb-4 flex flex-wrap gap-2">
-          <Badge variant="secondary" className="bg-[#a1a484] text-white">
+          <Badge variant="secondary" className="bg-[#0080ff] text-white">
             {job.type}
           </Badge>
-          <Badge variant="outline">{job.category}</Badge>
+          <Badge className="bg-black text-white" variant="outline">{job.category}</Badge>
         </div>
         <p className="mb-4 text-muted-foreground">
           {job.description.slice(0, 200)}...
         </p>
         <div className="space-y-4">
           <div>
-            <h4 className="font-semibold">Key Responsibilities:</h4>
+            <h4 className="font-semibold text-[#004589]">Key Responsibilities:</h4>
             <ul className="ml-4 list-disc text-sm text-muted-foreground">
               {job.responsibilities.slice(0, 3).map((resp, index) => (
                 <li key={index}>{resp}</li>
@@ -77,7 +77,7 @@ export default function JobsPage() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold">Required Qualifications:</h4>
+            <h4 className="font-semibold text-[#004589]">Required Qualifications:</h4>
             <ul className="ml-4 list-disc text-sm text-muted-foreground">
               {job.qualifications.slice(0, 3).map((qual, index) => (
                 <li key={index}>{qual}</li>
@@ -86,7 +86,7 @@ export default function JobsPage() {
           </div>
           {job.compensation && (
             <div>
-              <h4 className="font-semibold">Compensation:</h4>
+              <h4 className="font-semibold text-[#004589]">Compensation:</h4>
               <div className="text-sm text-muted-foreground">
                 {job.compensation.salary && (
                   <p>Salary: {job.compensation.salary}</p>
@@ -105,12 +105,12 @@ export default function JobsPage() {
       <CardFooter className="flex gap-4">
         <Button
           variant="outline"
-          className="flex-1 border-[#a25f35] text-[#a25f35] hover:bg-[#a25f35] hover:text-white"
+          className="flex-1 border-[#001e3b] text-[#001e3b] hover:bg-[#001e3b] hover:text-white"
           onClick={() => handleApply(job.title, job.id)}
         >
           Apply Now
         </Button>
-        <Button variant="outline" className="flex-1">
+        <Button variant="outline" className="flex-1 text-[#001e3b]">
           Learn More
         </Button>
       </CardFooter>
@@ -118,9 +118,9 @@ export default function JobsPage() {
   );
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="bg-[#a25f35] px-4 py-16 text-white md:py-24">
+      <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">
@@ -140,7 +140,7 @@ export default function JobsPage() {
                 <Input
                   id="search"
                   placeholder="Job title, keywords, or company"
-                  className="h-12 w-full bg-white/50 text-black"
+                  className="h-12 w-full bg-white text-black"
                 />
               </div>
               <div className="w-full md:w-48">
@@ -150,7 +150,7 @@ export default function JobsPage() {
                 <Input
                   id="location"
                   placeholder="Location"
-                  className="h-12 w-full bg-white/50 text-black"
+                  className="h-12 w-full bg-white text-black"
                 />
               </div>
               <Button
@@ -167,7 +167,7 @@ export default function JobsPage() {
       </section>
 
       {/* Featured Jobs Section */}
-      <section className="px-4 py-16 md:py-24">
+      <section className="px-4 text-[#0080ff]  py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Featured Job Openings
@@ -179,7 +179,7 @@ export default function JobsPage() {
       </section>
 
       {/* All Jobs Section */}
-      <section className="bg-gray-50 px-4 py-16 md:py-24">
+      <section className="bg-gray-50 text-[#0080ff] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             All Available Positions
@@ -193,7 +193,7 @@ export default function JobsPage() {
       {/* Job Categories Section */}
       <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
+          <h2 className="mb-12 text-[#0080ff] text-center text-3xl font-bold md:text-4xl">
             Explore Job Categories
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -209,11 +209,11 @@ export default function JobsPage() {
             ].map((category, index) => (
               <Card
                 key={index}
-                className="text-center hover:bg-[#82b8e2]/10 hover:shadow-md transition-all duration-300"
+                className="text-center border-black hover:bg-[#82b8e2]/10 hover:shadow-md transition-all duration-300"
               >
                 <CardContent className="pt-6">
-                  <Briefcase className="mx-auto mb-4 h-12 w-12 text-[#82b8e2]" />
-                  <h3 className="text-lg font-semibold">{category}</h3>
+                  <Briefcase className="mx-auto mb-4 h-12 w-12 text-black" />
+                  <h3 className="text-lg font-semibold text-black">{category}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
                     Explore jobs in {category}
                   </p>
@@ -229,7 +229,7 @@ export default function JobsPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 md:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold md:text-4xl">
+              <h2 className="text-3xl text-[#0080ff] font-bold md:text-4xl">
                 Why Work With BAM Hire?
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -237,7 +237,7 @@ export default function JobsPage() {
                 individuals with opportunities that matter. Here&apos;s why you
                 should choose us for your next career move:
               </p>
-              <ul className="space-y-4">
+              <ul className="space-y-4 text-[#001e3b]">
                 {[
                   "Access to exclusive job opportunities",
                   "Personalized career guidance",
@@ -256,7 +256,7 @@ export default function JobsPage() {
               <Button
                 asChild
                 size="lg"
-                className="mt-6 bg-[#a25f35] text-white hover:bg-[#9e7a52]"
+                className="mt-6 bg-[#001e3b] text-white hover:bg-[#9e7a52]"
               >
                 <Link href="/about">Learn More About BAM Hire</Link>
               </Button>
@@ -302,7 +302,7 @@ export default function JobsPage() {
             ].map((resource, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <resource.icon className="mb-4 h-12 w-12 text-[#a25f35]" />
+                  <resource.icon className="mb-4 h-12 w-12 text-[#001e3b]" />
                   <CardTitle>{resource.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -311,7 +311,7 @@ export default function JobsPage() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="link" className="px-0 text-[#a25f35]">
+                  <Button variant="link" className="px-0 text-[#001e3b]">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -323,7 +323,7 @@ export default function JobsPage() {
       </section> */}
 
       {/* CTA Section */}
-      {/* <section className="bg-[#a25f35] px-4 py-16 text-white md:py-24">
+      {/* <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Ready to Take the Next Step in Your Career?
@@ -338,7 +338,7 @@ export default function JobsPage() {
               asChild
               size="lg"
               variant="outline"
-              className="bg-white text-[#a25f35] hover:bg-[#a1a484]/10"
+              className="bg-white text-[#001e3b] hover:bg-[#a1a484]/10"
             >
               <Link href="/register">Create an Account</Link>
             </Button>

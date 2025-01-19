@@ -16,7 +16,7 @@ export function PartnerSection() {
             </p>
             <Button
               asChild
-              className="w-fit bg-[#0080ff] text-white hover:bg-[#ae7a52]"
+              className="w-fit bg-[#0080ff] text-white  hover:bg-blue-500"
             >
               <Link href="/contact">CONTACT US</Link>
             </Button>

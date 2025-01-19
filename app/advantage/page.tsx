@@ -8,7 +8,7 @@ export default function AdvantagePage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
+      <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
@@ -34,7 +34,7 @@ export default function AdvantagePage() {
 
       {/* Staffing & Recruiting Solutions Section */}
       <section className="px-4 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto text-[#0080ff] max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Staffing & Recruiting Solutions
           </h2>
@@ -53,8 +53,8 @@ export default function AdvantagePage() {
                 description: "Evaluate potential hires through contract roles before making long-term commitments."
               },
             ].map((solution) => (
-              <Card key={solution.title}>
-                <CardContent className="p-6">
+              <Card className="border-black" key={solution.title}>
+                <CardContent className="p-6 text-[#0080ff] ">
                   <h3 className="mb-2 text-xl font-semibold">{solution.title}</h3>
                   <p className="text-muted-foreground">{solution.description}</p>
                 </CardContent>
@@ -65,7 +65,7 @@ export default function AdvantagePage() {
       </section>
 
       {/* Consulting and Advisory Services Section */}
-      <section className="px-4  md:py-10">
+      <section className="px-4  md:py-10 text-[#0080ff] ">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Consulting and Advisory Services
@@ -88,8 +88,8 @@ export default function AdvantagePage() {
                   "Enhancing business efficiency through process redesign, technology integration, and operational excellence initiatives. This includes advisory on streamlining workflows, implementing new tools, and achieving measurable outcomes."
               },
             ].map((service) => (
-              <Card key={service.title}>
-                <CardContent className="p-6">
+              <Card  className="border-black" key={service.title}>
+                <CardContent className="p-6 text-[#0080ff] ">
                   <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
                   <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>
@@ -100,7 +100,7 @@ export default function AdvantagePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#a1a484] px-4 py-16 text-white md:py-24">
+      <section className="bg-[#004589] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 text-3xl font-bold md:text-4xl">
             Ready to Experience the BAM Hire Magic?

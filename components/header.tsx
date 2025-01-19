@@ -22,7 +22,7 @@ export function Header() {
         <NavigationMenu className="hidden md:block">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-[#0080ff]">About BAM Hire</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="text-[#0080ff] hover:text-[#0080ff]">About BAM Hire</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
@@ -40,7 +40,7 @@ export function Header() {
                       </Link>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="/about" title="About Us">
+                  <ListItem  href="/about" title="About Us">
                     Learn about our history and values
                   </ListItem>
                   <ListItem href="/advantage" title="The BAM Hire Magic">
@@ -71,7 +71,7 @@ export function Header() {
             <Button
               variant="default"
               size="sm"
-              className="hidden bg-[#0080ff] md:inline-flex"
+              className="hidden bg-[#0080ff] md:inline-flex hover:bg-[#0080ff]"
             >
               Find a Job
             </Button>
@@ -93,10 +93,10 @@ const ListItem = ({
   href: string;
 }) => {
   return (
-    <li>
+    <li >
       <NavigationMenuLink asChild>
         <a
-          className={`block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground`}
+          className={`block select-none space-y-1 rounded-md text-[#0080ff] hover:text-[#0080ff] p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground`}
           href={href}
         >
           <div className="text-sm font-medium leading-none">{title}</div>
