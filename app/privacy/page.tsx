@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
         <div className="bg-white text-[#4B5563] max-w-4xl  mx-auto p-6 md:p-10 font-sans leading-relaxed">
             <h1 className="text-4xl pt-20 font-extrabold mb-6  text-[#0080ff]">Privacy Policy</h1>
             <p className="mb-6">
-                At <strong>BAMhire</strong>, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, share, and protect your personal information when you visit our website or engage with our services. By using our website (<a href="https://www.BAM Hire.com/" target="_blank" rel="noopener noreferrer" className='text-blue-600'>https://www.BAM Hire.com/</a>) and services, you agree to the terms outlined in this policy.
+                At <strong>BAM Hire</strong>, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, share, and protect your personal information when you visit our website or engage with our services. By using our website (<a href="https://www.bamhire.com/" target="_blank" rel="noopener noreferrer" className='text-blue-600'>https://www.bamhire.com/</a>) and services, you agree to the terms outlined in this policy.
             </p>
 
             <section style={{ marginTop: '30px' }}>
@@ -93,13 +93,13 @@ export default function PrivacyPolicy() {
                 <h2 className="text-2xl font-bold mb-4 text-[#0080ff]"> Contact Us</h2>
                 <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
                 <address style={{ fontStyle: 'normal', marginTop: '10px' }}>
-                    <strong>BAMhire</strong><br />
+                    <strong>BAM Hire</strong><br />
                     Phone: <a href="tel:+17087901398" className='text-blue-600'>(708) 790-1398</a><br />
-                    Email: <a href="mailto:recruiting@BAMhire.com" className='text-blue-600'>recruiting@BAMhire.com</a>
+                    Email: <a href="mailto:recruiting@bamhire.com" className='text-blue-600'>recruiting@bamhire.com</a>
                 </address>
             </section>
 
-            <p style={{ marginTop: '30px', textAlign: 'center' }}>Thank you for trusting BAMhire. We are committed to protecting your privacy and providing you with a secure and transparent experience.</p>
+            <p style={{ marginTop: '30px', textAlign: 'center' }}>Thank you for trusting BAM Hire. We are committed to protecting your privacy and providing you with a secure and transparent experience.</p>
         </div>
     );
 }
