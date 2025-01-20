@@ -7,16 +7,16 @@ export default function Page() {
                 Cookie Policy
             </h1>
             <p className="mb-4">
-                At BAMhire, we use cookies and similar technologies to improve your browsing
+                At BAM Hire, we use cookies and similar technologies to improve your browsing
                 experience, provide personalized services, and better understand how
                 our website is used. This Cookie Policy explains what cookies are, how
                 we use them, and your choices regarding their use. By continuing to use
                 our website (
                 <a
-                    href="https://www.BAM Hire.com/"
+                    href="https://www.bamhire.com/"
                     className="text-blue-600 hover:underline"
                 >
-                    https://www.BAM Hire.com/
+                    https://www.bamhire.com/
                 </a>
                 ), you consent to the use of cookies as described in this policy.
             </p>
@@ -136,16 +136,16 @@ export default function Page() {
                     cookies, please contact us:
                 </p>
                 <p className="mb-4">
-                BAMhire
+                BAM Hire
                     <br />
                     Phone: <a href="tel:(708) 790-1398" className="text-blue-600 hover:underline">(708) 790-1398</a>
                     <br />
                     Email:{" "}
                     <a
-                        href="mailto:recruiting@BAMhire.com"
+                        href="mailto:recruiting@bamhire.com"
                         className="text-blue-600 hover:underline"
                     >
-                        recruiting@BAMhire.com
+                        recruiting@bamhire.com
                     </a>
                 </p>
             </section>
@@ -153,7 +153,7 @@ export default function Page() {
             
 
             <p className="text-center text-gray-600">
-                Thank you for choosing BAMhire. We are committed to providing you with a
+                Thank you for choosing BAM Hire. We are committed to providing you with a
                 transparent and user-friendly experience.
             </p>
         </div>
