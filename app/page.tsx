@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <main className="pt-20">
       <section className="grid md:grid-cols-2">
-        <div className="flex flex-col justify-center bg-[#001e3b] px-4 py-20 text-white md:px-12 md:py-32">
-          <div className="mx-auto max-w-xl md:w-[80%]">
-            <h1 className="mb-6 text-3xl font-medium leading-tight md:text-5xl">
+        <div className="flex flex-col justify-center bg-[#001e3b] px-4 py-20 text-white md:px-5 md:py-20">
+          <div className="mx-auto max-w-xl lg:w-[90%]">
+            <h1 className="mb-6 text-3xl font-medium leading-tight lg:text-4xl">
               {firstpartofheader.map((item, index)=>{
                 return <motion.span
                 key={index}
