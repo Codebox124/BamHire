@@ -3,7 +3,7 @@ import React from "react";
 export default function TermsOfService() {
     return (
         <div className="bg-white max-w-4xl  mx-auto text-[#4B5563] p-6 md:p-10 font-sans leading-relaxed">
-            <h1 className="text-4xl pt-20 font-extrabold mb-6 text-[#0080ff]">Terms of Service</h1>
+            <h1 className="text-4xl pt-20 font-extrabold mb-6 text-[#004589]">Terms of Service</h1>
             <p className="mb-6">
                 Welcome to <strong>BAM Hire</strong> By accessing or using our website (
                 <a
@@ -20,7 +20,7 @@ export default function TermsOfService() {
             </p>
             
 
-            <h2 className="text-2xl text-[#0080ff] font-bold mb-4">Use of Our Services</h2>
+            <h2 className="text-2xl text-[#004589] font-bold mb-4">Use of Our Services</h2>
             <h3 className="text-xl font-semibold mb-2">Eligibility:</h3>
             <p className="mb-4">
                 You must be at least 18 years old or the legal age in your jurisdiction
@@ -37,7 +37,7 @@ export default function TermsOfService() {
 
             
 
-            <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">Account Registration and Responsibilities</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#004589]">Account Registration and Responsibilities</h2>
             <p className="mb-4">
                 To access certain services, you may need to create an account. You are
                 responsible for:
@@ -54,7 +54,7 @@ export default function TermsOfService() {
 
             
 
-            <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">Content and Intellectual Property</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#004589]">Content and Intellectual Property</h2>
             <h3 className="text-xl font-semibold mb-2">Ownership:</h3>
             <p className="mb-4">
                 All content on our website, including text, graphics, logos, and
@@ -78,7 +78,7 @@ export default function TermsOfService() {
 
             
 
-            <h2 className="text-2xl font-bold mb-4 text-[#0080ff]"> Service Availability</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#004589]"> Service Availability</h2>
             <p className="mb-6">
                 We strive to ensure our website and services are accessible at all
                 times. However, we do not guarantee uninterrupted or error-free
@@ -88,7 +88,7 @@ export default function TermsOfService() {
 
             
 
-            <h2 className="text-2xl font-bold mb-4 text-[#0080ff]"> Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#004589]"> Limitation of Liability</h2>
             <ul className="list-disc pl-6 space-y-2 mb-6">
                 <li>
                 BAM Hire is not liable for any indirect, incidental, or consequential
@@ -102,7 +102,7 @@ export default function TermsOfService() {
 
             
 
-            <h2 className="text-2xl font-bold mb-4 text-[#0080ff]"> Contact Us</h2>
+            <h2 className="text-2xl font-bold mb-4 text-[#004589]"> Contact Us</h2>
             <p className="mb-4">If you have any questions about these Terms, please contact us:</p>
             <address className="not-italic">
                 <strong>BAM Hire</strong>

@@ -46,7 +46,7 @@ export default function AdvantagePage() {
 
       {/* Staffing & Recruiting Solutions Section */}
       <section className="px-4 py-16 md:py-24">
-        <div className="mx-auto text-[#0080ff] max-w-7xl">
+        <div className="mx-auto text-[#004589] max-w-7xl">
           <motion.h2
              initial={fromBottomToTop.initial}
            whileInView={fromBottomToTop.whileInView}
@@ -77,7 +77,7 @@ export default function AdvantagePage() {
            viewport={fromBottomToTop.viewPort}
              key={solution.title}>
                <Card className="border-black" >
-                <CardContent className="p-6 text-[#0080ff] ">
+                <CardContent className="p-6 text-[#004589] ">
                   <h3 className="mb-2 text-xl font-semibold">{solution.title}</h3>
                   <p className="text-muted-foreground">{solution.description}</p>
                 </CardContent>
@@ -89,7 +89,7 @@ export default function AdvantagePage() {
       </section>
 
       {/* Consulting and Advisory Services Section */}
-      <section className="px-4  md:py-10 text-[#0080ff] ">
+      <section className="px-4  md:py-10 text-[#004589] ">
         <div className="mx-auto max-w-7xl">
           <motion.h2
              initial={fromBottomToTop.initial}
@@ -124,7 +124,7 @@ export default function AdvantagePage() {
               viewport={fromBottomToTop.viewPort}
               key={service.title}>
                 <Card  className="border-black" >
-                <CardContent className="p-6 text-[#0080ff] ">
+                <CardContent className="p-6 text-[#004589] ">
                   <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
                   <p className="text-muted-foreground">{service.description}</p>
                 </CardContent>

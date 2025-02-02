@@ -3,7 +3,7 @@ import React from "react";
 export default function Page() {
     return (
         <div className="bg-white max-w-4xl  mx-auto text-[#4B5563] p-6 md:p-10 font-sans leading-relaxed">
-            <h1 className="text-4xl pt-20 font-extrabold mb-6 text-[#0080ff]">
+            <h1 className="text-4xl pt-20 font-extrabold mb-6 text-[#004589]">
                 Cookie Policy
             </h1>
             <p className="mb-4">
@@ -24,7 +24,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                      What Are Cookies?
                 </h2>
                 <p className="mb-4">
@@ -38,7 +38,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                      Types of Cookies We Use
                 </h2>
                 <p className="mb-[10px]">We use the following types of cookies on our website:
@@ -66,7 +66,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                     How We Use Cookies
                 </h2>
                 <p className="mb-[10px]">We use cookies to:</p>
@@ -83,7 +83,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                      Managing Your Cookie Preferences
                 </h2>
                 <p className="mb-4">
@@ -105,7 +105,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                      Third-Party Cookies
                 </h2>
                 <p className="mb-4">
@@ -117,7 +117,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                      Updates to This Policy
                 </h2>
                 <p className="mb-4">
@@ -128,7 +128,7 @@ export default function Page() {
             
 
             <section>
-                <h2 className="text-2xl font-bold mb-4 text-[#0080ff]">
+                <h2 className="text-2xl font-bold mb-4 text-[#004589]">
                     Contact Us
                 </h2>
                 <p className="mb-4">

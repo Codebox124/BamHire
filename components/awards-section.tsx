@@ -13,7 +13,7 @@ export function AwardsSection() {
           <div
 
             className="space-y-4">
-            <h2 className="text-4xl text-[#0080ff] font-bold leading-tight lg:text-5xl">
+            <h2 className="text-4xl text-[#004589] font-bold leading-tight lg:text-5xl">
               Achieving Excellence In Workforce Solutions
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -40,25 +40,25 @@ export function AwardsSection() {
               <div
 
                 className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                <h3 className="text-4xl font-bold text-[#0080ff]">20+</h3>
+                <h3 className="text-4xl font-bold text-[#004589]">20+</h3>
                 <p className="text-muted-foreground">Years of Excellence</p>
               </div>
               <div
 
                 className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                <h3 className="text-4xl font-bold text-[#0080ff]">3</h3>
+                <h3 className="text-4xl font-bold text-[#004589]">3</h3>
                 <p className="text-muted-foreground">Continents Worldwide</p>
               </div>
               <div
 
                 className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                <h3 className="text-4xl font-bold text-[#0080ff]">50+</h3>
+                <h3 className="text-4xl font-bold text-[#004589]">50+</h3>
                 <p className="text-muted-foreground">Engaged fortune 500 Companies</p>
               </div>
               <div
 
                 className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                <h3 className="text-4xl font-bold text-[#0080ff]">10+</h3>
+                <h3 className="text-4xl font-bold text-[#004589]">10+</h3>
                 <p className="text-muted-foreground">Industries
                 </p>
               </div>

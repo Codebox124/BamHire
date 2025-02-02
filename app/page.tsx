@@ -23,8 +23,8 @@ export default function Home() {
     <main className="pt-20">
       <section className="grid md:grid-cols-2">
         <div className="flex flex-col justify-center bg-[#001e3b] px-4 py-20 text-white md:px-12 md:py-32">
-          <div className="mx-auto max-w-xl w-[80%]">
-            <h1 className="mb-6 text-4xl font-medium leading-tight md:text-5xl">
+          <div className="mx-auto max-w-xl md:w-[80%]">
+            <h1 className="mb-6 text-3xl font-medium leading-tight md:text-5xl">
               {firstpartofheader.map((item, index)=>{
                 return <motion.span
                 key={index}
@@ -60,7 +60,7 @@ export default function Home() {
            <Button
               asChild
               variant="outline"
-              className="w-fit bg-transparent text-[#0080ff] bg-white  "
+              className="w-fit bg-transparent text-[#004589] bg-white  "
             >
               <Link href="/jobs" className="group">
                 Explore jobs

@@ -49,7 +49,7 @@ export default function JobsPage() {
         <div className="flex items-center justify-between">
           <CardTitle className="text-[#004589]">{job.title}</CardTitle>
           {job.featured && (
-            <Badge className="bg-[#0080ff] text-white">Featured</Badge>
+            <Badge className="bg-[#004589] text-white">Featured</Badge>
           )}
         </div>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -59,7 +59,7 @@ export default function JobsPage() {
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="mb-4 flex flex-wrap gap-2">
-          <Badge variant="secondary" className="bg-[#0080ff] text-white">
+          <Badge variant="secondary" className="bg-[#004589] text-white">
             {job.type}
           </Badge>
           <Badge className="bg-black text-white" variant="outline">{job.category}</Badge>
@@ -167,7 +167,7 @@ export default function JobsPage() {
       </section>
 
       {/* Featured Jobs Section */}
-      <section className="px-4 text-[#0080ff]  py-16 md:py-24">
+      <section className="px-4 text-[#004589]  py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             Featured Job Openings
@@ -179,7 +179,7 @@ export default function JobsPage() {
       </section>
 
       {/* All Jobs Section */}
-      <section className="bg-gray-50 text-[#0080ff] px-4 py-16 md:py-24">
+      <section className="bg-gray-50 text-[#004589] px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
             All Available Positions
@@ -193,7 +193,7 @@ export default function JobsPage() {
       {/* Job Categories Section */}
       <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-[#0080ff] text-center text-3xl font-bold md:text-4xl">
+          <h2 className="mb-12 text-[#004589] text-center text-3xl font-bold md:text-4xl">
             Explore Job Categories
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -229,7 +229,7 @@ export default function JobsPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 md:grid-cols-2">
             <div className="space-y-6">
-              <h2 className="text-3xl text-[#0080ff] font-bold md:text-4xl">
+              <h2 className="text-3xl text-[#004589] font-bold md:text-4xl">
                 Why Work With BAM Hire?
               </h2>
               <p className="text-lg text-muted-foreground">

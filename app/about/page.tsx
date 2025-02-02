@@ -54,7 +54,7 @@ export default function AboutPage() {
            whileInView={fromBottomToTop.whileInView}
            transition={fromBottomToTop.transitition}
            viewport={fromBottomToTop.viewPort}
-          className="mb-12 text-center text-3xl font-bold text-[#0080ff] md:text-4xl">
+          className="mb-12 text-center text-3xl font-bold text-[#004589] md:text-4xl">
             Our Core Values
           </motion.h2>
           <motion.div
@@ -111,8 +111,8 @@ export default function AboutPage() {
               key={value.title}>
                 <Card  className="border-none bg-gray-50">
                 <CardContent className="pt-6">
-                  <value.icon className="mb-4 h-8 w-8 text-[#0080ff]" />
-                  <h3 className="mb-2 text-xl font-semibold text-[#0080ff]">
+                  <value.icon className="mb-4 h-8 w-8 text-[#004589]" />
+                  <h3 className="mb-2 text-xl font-semibold text-[#004589]">
                     {value.title}
                   </h3>
                   <p className="text-muted-foreground">{value.description}</p>
@@ -134,7 +134,7 @@ export default function AboutPage() {
              transition={fromLeftToRight.transitition}
              viewport={fromLeftToRight.viewPort}
             className="space-y-6">
-              <h2 className="text-3xl font-bold text-[#0080ff] md:text-4xl">
+              <h2 className="text-3xl font-bold text-[#004589] md:text-4xl">
                 Our History
               </h2>
               <div className="space-y-4">
@@ -160,19 +160,19 @@ export default function AboutPage() {
             className="grid gap-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#0080ff]">20+</h3>
+                  <h3 className="text-4xl font-bold text-[#004589]">20+</h3>
                   <p className="text-muted-foreground">Years of Excellence</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#0080ff]">3</h3>
+                  <h3 className="text-4xl font-bold text-[#004589]">3</h3>
                   <p className="text-muted-foreground">Continents Worldwide</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#0080ff]">50+</h3>
+                  <h3 className="text-4xl font-bold text-[#004589]">50+</h3>
                   <p className="text-muted-foreground">Engaged fortune 500 Companies</p>
                 </div>
                 <div className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
-                  <h3 className="text-4xl font-bold text-[#0080ff]">10+</h3>
+                  <h3 className="text-4xl font-bold text-[#004589]">10+</h3>
                   <p className="text-muted-foreground">Industries
                   </p>
                 </div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
       {/* Leadership Section */}
       {/* <section className="px-4 py-16 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-[#0080ff] md:text-4xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-[#004589] md:text-4xl">
             Our Leadership Team
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -201,7 +201,7 @@ export default function AboutPage() {
                       className="h-full w-full object-cover"
                     />
                   </div>
-                  <h3 className="mb-1 text-lg font-semibold text-[#0080ff]">
+                  <h3 className="mb-1 text-lg font-semibold text-[#004589]">
                     Executive Name {i}
                   </h3>
                   <p className="mb-2 text-sm text-muted-foreground">
@@ -237,7 +237,7 @@ export default function AboutPage() {
             asChild
             variant="outline"
             size="lg"
-            className="bg-transparent text-white hover:bg-white hover:text-[#0080ff]"
+            className="bg-transparent text-white hover:bg-white hover:text-[#004589]"
           >
             <Link href="/careers">View Open Positions</Link>
           </Button>

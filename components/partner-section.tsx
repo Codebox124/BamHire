@@ -12,7 +12,7 @@ export function PartnerSection() {
           <div className="space-y-6">
             <h2
 
-              className="text-4xl text-[#0080ff] font-bold leading-tight lg:text-5xl">
+              className="text-4xl text-[#004589] font-bold leading-tight lg:text-5xl">
               Together, we unlock endless potential.
             </h2>
             <p
@@ -25,7 +25,7 @@ export function PartnerSection() {
             >
               <Button
                 asChild
-                className="w-fit bg-[#0080ff] text-white  hover:bg-blue-500"
+                className="w-fit bg-[#004589] text-white  hover:bg-blue-500"
               >
                 <Link href="/contact">CONTACT US</Link>
               </Button>
