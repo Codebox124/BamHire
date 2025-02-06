@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="pt-20">
       <section className="grid md:grid-cols-2">
-        <div className="flex flex-col justify-center bg-[#001e3b] h-96 px-4 py-20 text-white md:px-5 md:py-20">
+        <div className="flex flex-col justify-center bg-[#001e3b] md:h-96 px-4 py-20 text-white md:px-5 md:py-20">
           <div className="mx-auto max-w-xl lg:w-[90%]">
             <h1 className="mb-6 text-3xl font-medium leading-tight lg:text-4xl">
               {firstpartofheader.map((item, index) => {
