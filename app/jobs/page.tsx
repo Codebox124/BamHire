@@ -110,7 +110,7 @@ export default function JobsPage() {
         >
           Apply Now
         </Button>
-        <Button variant="outline" className="flex-1 text-[#001e3b]">
+        <Button variant="outline"  className="flex-1 border-[#001e3b] text-[#001e3b] hover:bg-[#001e3b] hover:text-white">
           Learn More
         </Button>
       </CardFooter>
@@ -273,85 +273,7 @@ export default function JobsPage() {
         </div>
       </section>
 
-      {/* Job Seeker Resources Section */}
-      {/* <section className="bg-gray-50 px-4 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-center text-3xl font-bold md:text-4xl">
-            Job Seeker Resources
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Resume Writing Tips",
-                description:
-                  "Learn how to craft a standout resume that gets you noticed by top employers.",
-                icon: FileText,
-              },
-              {
-                title: "Interview Preparation",
-                description:
-                  "Ace your interviews with our comprehensive guide to common questions and best practices.",
-                icon: Users,
-              },
-              {
-                title: "Career Development",
-                description:
-                  "Explore resources to help you grow your skills and advance your career.",
-                icon: TrendingUp,
-              },
-            ].map((resource, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <resource.icon className="mb-4 h-12 w-12 text-[#001e3b]" />
-                  <CardTitle>{resource.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    {resource.description}
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="link" className="px-0 text-[#001e3b]">
-                    Learn More
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* CTA Section */}
-      {/* <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-            Ready to Take the Next Step in Your Career?
-          </h2>
-          <p className="mb-8 text-lg text-white">
-            Join thousands of professionals who have found their dream jobs
-            through BAM Hire. Let&apos;s start your journey to a fulfilling
-            career today.
-          </p>
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="bg-white text-[#001e3b] hover:bg-[#a1a484]/10"
-            >
-              <Link href="/register">Create an Account</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              className="bg-[#a1a484] hover:bg-[#9e7a52]"
-            >
-              <Link href="/all-jobs">Browse All Jobs</Link>
-            </Button>
-          </div>
-        </div>
-      </section> */}
+    
       <JobApplicationModal
         isOpen={!!selectedJob}
         onClose={handleCloseModal}

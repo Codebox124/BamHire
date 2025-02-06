@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { fromLeftToRight, fromRightToLeft, fromBottomToTop } from "@/components/animations"
 export default function AboutPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       {/* Hero Section */}
       <section className="bg-[#001e3b] px-4 py-16 text-white md:py-24">
         <div className="mx-auto max-w-7xl">
