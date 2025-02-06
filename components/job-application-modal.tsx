@@ -36,7 +36,6 @@ export function JobApplicationModal({
     e.preventDefault();
     setIsSubmitting(true);
 
-    e.preventDefault();
     const formData = new FormData(e.currentTarget);
     const cover_letter = formData.get("coverLetter") as string;
 
@@ -49,7 +48,6 @@ export function JobApplicationModal({
         .send("service_j2cxn4y", "template_5lk4zxi", {
           job_name: jobTitle,
           job_id: jobId,
-          // admin_email: "rajcodes733@gmail.com",
           cover_letter: cover_letter,
           to_name: "Bamhire Admin",
           from_name: "Bamhire",
@@ -63,7 +61,6 @@ export function JobApplicationModal({
               title: "Success",
               description: "Job applied successfully",
             });
-            console.log("SUCCESS!");
           },
           (error) => {
             console.log(error, "FAILED...", error.text);
@@ -71,11 +68,8 @@ export function JobApplicationModal({
         );
     }
 
-    // const formData = new FormData(e.currentTarget);
-
     try {
-      // In a real application, you would send this to your server
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate API call
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       alert("Application submitted successfully!");
       onClose();
     } catch (error) {
@@ -88,73 +82,45 @@ export function JobApplicationModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] ">
         <DialogHeader>
-          <DialogTitle>Apply for {jobTitle}</DialogTitle>
-          <DialogDescription>
+          <DialogTitle className="text-[#004589]">Apply for {jobTitle}</DialogTitle>
+          <DialogDescription className="text-[#004589]">
             Please fill out the form below to apply for this position.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="firstName">First Name</Label>
-              <Input
-                id="firstName"
-                name="firstName"
-                required
-                placeholder="John"
-              />
+              <Label htmlFor="firstName" className="text-[#004589]">First Name</Label>
+              <Input id="firstName" name="firstName" required placeholder="John" className="text-black" />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="lastName">Last Name</Label>
-              <Input id="lastName" name="lastName" required placeholder="Doe" />
+              <Label htmlFor="lastName" className="text-[#004589]">Last Name</Label>
+              <Input id="lastName" name="lastName" required placeholder="Doe" className="text-black" />
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              required
-              placeholder="john@example.com"
-            />
+            <Label htmlFor="email" className="text-[#004589]">Email</Label>
+            <Input id="email" name="email" type="email" required placeholder="john@example.com" className="text-black" />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number</Label>
-            <Input
-              id="phone"
-              name="phone"
-              type="tel"
-              required
-              placeholder="(555) 555-5555"
-            />
+            <Label htmlFor="phone" className="text-[#004589]">Phone Number</Label>
+            <Input id="phone" name="phone" type="tel" required placeholder="(555) 555-5555" className="text-black" />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="resume">Resume/CV</Label>
-            <Input
-              id="resume"
-              name="resume"
-              type="file"
-              accept=".pdf,.doc,.docx"
-              required
-            />
+            <Label htmlFor="resume" className="text-[#004589]">Resume/CV</Label>
+            <Input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" required className="text-black" />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="coverLetter">Cover Letter</Label>
-            <Textarea
-              id="coverLetter"
-              name="coverLetter"
-              placeholder="Tell us why you're interested in this position..."
-              className="min-h-[100px]"
-            />
+            <Label htmlFor="coverLetter" className="text-[#004589]">Cover Letter</Label>
+            <Textarea id="coverLetter" name="coverLetter" placeholder="Tell us why you're interested in this position..." className="min-h-[100px] " />
           </div>
           <div className="flex justify-end gap-4">
-            <Button type="button" variant="outline" onClick={onClose}>
+            <Button type="button" variant="outline" onClick={onClose} className="text-[#004589] hover:bg-[#15293d]">
               Cancel
             </Button>
-            <Button type="submit" disabled={isSubmitting}>
+            <Button type="submit" disabled={isSubmitting} className="bg-[#004589] hover:bg-[#15293d] text-white">
               {isSubmitting ? "Submitting..." : "Submit Application"}
             </Button>
           </div>

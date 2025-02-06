@@ -6,7 +6,7 @@ import Link from "next/link";
 import { fromBottomToTop, fromLeftToRight, fromRightToLeft } from "@/components/animations"
 export function AwardsSection() {
   return (
-    <section className="bg-gray-50 py-16 lg:py-24">
+    <section className="bg-gray-50 pt-16 lg:pt-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid items-center gap-8 lg:grid-cols-2">
 
@@ -33,7 +33,7 @@ export function AwardsSection() {
         </div>
       </div>
 
-      <section className="bg-[#f5f5f5] px-4 py-16 md:py-24">
+      <section className="bg-[#f5f5f5] px-4  md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-4">
             <div className="grid gap-4 md:grid-cols-4">
@@ -47,7 +47,7 @@ export function AwardsSection() {
 
                 className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
                 <h3 className="text-4xl font-bold text-[#004589]">3</h3>
-                <p className="text-muted-foreground">Continents Worldwide</p>
+                <p className="text-muted-foreground">Continents </p>
               </div>
               <div
 

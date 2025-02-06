@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -10,9 +11,9 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[2fr_1fr_1fr]">
           <div>
             <Link href="/" className="text-2xl font-bold">
-              BAM Hire
+              <Image width={200} height={200} className="w-40 " src="/BAMhire_logo.png" alt="" />
             </Link>
-            
+
           </div>
 
           <div>

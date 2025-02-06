@@ -55,7 +55,7 @@ export default function InsightsPage() {
 
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`px-4 py-2 text-xs border rounded hover:bg-blue-500 hover:text-white ${activeTab === tab ? "bg-[#82b8c2] text-white" : "text-[#82b8c2]"
+                            className={`px-4 py-2 text-xs border rounded hover:bg-[#15293d] hover:text-white ${activeTab === tab ? "bg-[#15293d] text-white" : "text-[#15293d]"
                                 }`}
                         >
                             {tab.replace("-", " ").toUpperCase()}
@@ -243,7 +243,7 @@ export default function InsightsPage() {
                     )}
                 </motion.div>
                 <div className="flex mt-5 justify-center items-center">
-                    {activeTab === "press-releases" && <button onClick={() => { setShowMorePressReleases(!showMorePressReleases) }} className="border rounded-lg py-2 px-6 hover:bg-black hover:text-white">View {showMorePressReleases ? "Less" : "More"}</button>}
+                    {activeTab === "press-releases" && <button onClick={() => { setShowMorePressReleases(!showMorePressReleases) }} className="border rounded-lg py-2 px-6 hover:bg-black text-[#15293d] hover:text-white">View {showMorePressReleases ? "Less" : "More"}</button>}
                 </div>
             </section>
 

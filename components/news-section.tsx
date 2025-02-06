@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
-import {fromBottomToTop} from "@/components/animations"
+
 export function NewsSection() {
   const news = [
     {
@@ -30,29 +30,29 @@ export function NewsSection() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {news.map((item, index) => (
             <div
-            key={item.title}
-           
+              key={item.title}
+
             >
-            <Card  className="group border-black relative">
-              <CardHeader>
-                <Badge
-                  variant="secondary"
-                  className="w-fit bg-[#004589] text-white"
-                >
-                  {item.category}
-                </Badge>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <h3 className="text-xl text-black font-semibold">{item.title}</h3>
-                <Link
-                  href={item.link}
-                  className="inline-flex items-center gap-2 text-[#82b8c2] hover:underline"
-                >
-                  Read more
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </CardContent>
-            </Card>
+              <Card className="group border-black relative">
+                <CardHeader>
+                  <Badge
+                    variant="default"
+                    className="w-fit bg-[#004589] text-white"
+                  >
+                    {item.category}
+                  </Badge>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <h3 className="text-xl text-black font-semibold">{item.title}</h3>
+                  <Link
+                    href={item.link}
+                    className="inline-flex items-center gap-2 text-[#004589] hover:underline"
+                  >
+                    Read more
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </CardContent>
+              </Card>
             </div>
           ))}
         </div>

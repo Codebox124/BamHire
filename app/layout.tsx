@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BAM Hire - Connecting Talent with Opportunity",
+  title: "BAM Hire - Your Talent. Our Focus.",
   description: "Global workforce solutions and staffing agency",
 };
 

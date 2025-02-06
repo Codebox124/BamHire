@@ -10,7 +10,7 @@ export function JobSection() {
         <h2
 
           className="mb-4 text-4xl text-[#004589] font-bold leading-tight lg:text-5xl">
-          Looking for work? BAM.
+          Looking for work? BAM!
           <br />
           The right job changes everything.
         </h2>
@@ -24,7 +24,7 @@ export function JobSection() {
         >
           <Button
             asChild
-            className="w-fit bg-[#004589] text-white hover:bg-[#ae7a52]"
+            className="w-fit bg-[#004589] text-white hover:bg-[#15293d]"
           >
             <Link href="/jobs">FIND A JOB</Link>
           </Button>

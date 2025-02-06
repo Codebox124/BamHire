@@ -156,7 +156,7 @@ export default function JobsPage() {
               <Button
                 type="submit"
                 size="lg"
-                className="h-12 bg-white text-black hover:bg-[#a1a484]/90"
+                className="h-12 bg-white text-black hover:bg-[#15293d] hover:text-white"
               >
                 <Search className="mr-2 h-5 w-5" />
                 Search Jobs
