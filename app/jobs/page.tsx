@@ -27,17 +27,26 @@ import Link from "next/link";
 import { JobApplicationModal } from "@/components/job-application-modal";
 import { jobs } from "@/lib/data";
 
+
 export default function JobsPage() {
   const [selectedJob, setSelectedJob] = useState<string | null>(null);
   const [selectedJobId, setSelectedJobId] = useState<string | null>(null);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const featuredJobs = jobs.filter((job) => job.featured);
   const regularJobs = jobs.filter((job) => !job.featured);
+  const [expandedJobs, setExpandedJobs] = useState<{ [key: string]: boolean }>({});
 
   const handleApply = (jobTitle: string, jobId: string) => {
     setSelectedJob(jobTitle);
     setSelectedJobId(jobId);
   };
+  const toggleJobDescription = (jobId: string) => {
+    setExpandedJobs((prev) => ({
+      ...prev,
+      [jobId]: !prev[jobId],
+    }));
+  };
+
 
   const handleCloseModal = () => {
     setSelectedJob(null);
@@ -64,9 +73,13 @@ export default function JobsPage() {
           </Badge>
           <Badge className="bg-black text-white" variant="outline">{job.category}</Badge>
         </div>
+
+        {/* Job Description */}
         <p className="mb-4 text-muted-foreground">
-          {job.description.slice(0, 200)}...
+          {expandedJobs[job.id] ? job.description : `${job.description.slice(0, 200)}...`}
         </p>
+
+        {/* Additional Info */}
         <div className="space-y-4">
           <div>
             <h4 className="font-semibold text-[#004589]">Key Responsibilities:</h4>
@@ -102,16 +115,23 @@ export default function JobsPage() {
           )}
         </div>
       </CardContent>
+
       <CardFooter className="flex gap-4">
         <Button
           variant="outline"
           className="flex-1 border-[#001e3b] text-[#001e3b] hover:bg-[#001e3b] hover:text-white"
-          onClick={() => handleApply(job.title, job.id)}
+          onClick={() => setSelectedJob(job.title)}
         >
           Apply Now
         </Button>
-        <Button variant="outline"  className="flex-1 border-[#001e3b] text-[#001e3b] hover:bg-[#001e3b] hover:text-white">
-          Learn More
+
+        {/* Toggle Full Description */}
+        <Button
+          variant="outline"
+          className="flex-1 border-[#001e3b] text-[#001e3b] hover:bg-[#001e3b] hover:text-white"
+          onClick={() => toggleJobDescription(job.id)}
+        >
+          {expandedJobs[job.id] ? "Show Less" : "Learn More"}
         </Button>
       </CardFooter>
     </Card>
@@ -273,7 +293,7 @@ export default function JobsPage() {
         </div>
       </section>
 
-    
+
       <JobApplicationModal
         isOpen={!!selectedJob}
         onClose={handleCloseModal}
