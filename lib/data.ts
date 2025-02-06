@@ -35,7 +35,7 @@ export const jobs: Job[] = [
         type: "Full-time",
         category: "Healthcare",
         featured: true,
-        description: "Our client is a comprehensive pain management practice where physicians operate at the top of their specialty. Utilizing minimally invasive, safe, and effective options for pain care, Seva aims to reduce the long-term need for opiates. The practice offers a competitive financial package and fosters a supportive family culture with a hardworking staff. The practice has four offices across Tulsa, OK, and Dallas, TX, and is actively expanding with the right physician partners. With independently owned surgery centers in each city, the practice provides significant career opportunities, both financially and clinically, for its doctors.",
+        description: "Our client is a comprehensive pain management practice where physicians operate at the top of their specialty. Utilizing minimally invasive, safe, and effective options for pain care, They aims to reduce the long-term need for opiates. The practice offers a competitive financial package and fosters a supportive family culture with a hardworking staff. The practice has four offices across Tulsa, OK, and Dallas, TX, and is actively expanding with the right physician partners. With independently owned surgery centers in each city, the practice provides significant career opportunities, both financially and clinically, for its doctors.",
         responsibilities: [
             "Perform interventional pain management procedures using minimally invasive techniques",
             "Develop comprehensive treatment plans to address chronic pain conditions",
