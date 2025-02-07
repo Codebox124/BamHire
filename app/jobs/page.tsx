@@ -68,7 +68,7 @@ export default function JobsPage() {
       </CardHeader>
       <CardContent className="flex-grow">
         <div className="mb-4 flex flex-wrap gap-2">
-          <Badge variant="secondary" className="bg-[#004589] text-white">
+          <Badge  className="bg-[#004589] text-white">
             {job.type}
           </Badge>
           <Badge className="bg-black text-white" variant="outline">{job.category}</Badge>

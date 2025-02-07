@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MobileMenu } from "@/components/mobile-menu";
 
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -27,16 +28,19 @@ export function Header() {
               <NavigationMenuTrigger className="text-[#004589] hover:text-white hover:bg-[#15293d]">About BAM Hire</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid   gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3 bg-[#004589] rounded-xl">
+                  <li className="row-span-3  rounded-xl">
+
                     <NavigationMenuLink asChild>
+
                       <Link
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
+                        className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b p-6 no-underline outline-none focus:shadow-md"
                         href="/"
                       >
-                        <div className="mt-4 text-lg font-medium text-white">
+                        <Image src='/BAMhire_logo.png' alt="" height={200} width={200} />
+                        {/* <div className="mt-4 text-lg font-medium ">
                           BAM Hire
-                        </div>
-                        <p className="text-sm leading-tight text-white">
+                        </div> */}
+                        <p className="text-[12px] leading-tight text-[#004589]">
                           Your Talent. Our Focus.
                         </p>
                       </Link>

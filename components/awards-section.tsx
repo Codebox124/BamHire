@@ -53,7 +53,7 @@ export function AwardsSection() {
 
                 className="space-y-2 rounded-lg bg-white p-6 shadow-sm">
                 <h3 className="text-4xl font-bold text-[#004589]">50+</h3>
-                <p className="text-muted-foreground">Engaged fortune 500 Companies</p>
+                <p className="text-muted-foreground">Engaged Fortune 500 Companies</p>
               </div>
               <div
 

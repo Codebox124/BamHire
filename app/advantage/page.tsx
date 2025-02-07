@@ -146,7 +146,7 @@ export default function AdvantagePage() {
 
 
       {/* CTA Section */}
-      <section className="bg-[#004589] px-4 py-16 text-white md:py-24">
+      <section className="bg-[#004589] px-4 py-16 mt-10 text-white md:py-24">
         <motion.div
           initial={fromBottomToTop.initial}
           whileInView={fromBottomToTop.whileInView}

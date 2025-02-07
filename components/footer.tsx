@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[2fr_1fr_1fr]">
           <div>
             <Link href="/" className="text-2xl font-bold">
-              <Image width={200} height={200} className="w-40 " src="/BAMhire_logo.png" alt="" />
+              <Image width={200} height={200} className="w-40 " src="/BAMHire_logo_ts_white.png" alt="" />
             </Link>
 
           </div>
